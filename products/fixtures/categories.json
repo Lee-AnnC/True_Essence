@@ -1,4 +1,7 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "aromatherapy_massage", "friendly_name": "Aromatherapy & Massage"}},  {"pk": 2, "model": "products.category", "fields": {"name": "essential", "friendly_name": "Essential"}}, {"pk": 3, "model": "products.category", "fields": {"name": "candles", "friendly_name": "Candles"}}, 
-{"pk": 4, "model": "products.category", "fields": {"name": "soap", "friendly_name": "Soap"}}, {"pk": 5, "model": "products.category", "fields": {"name": "reed", "friendly_name": "Reed"}}, {"pk": 6, "model": "products.category", "fields": {"name": "electric", "friendly_name": "Electric"}}, {"pk": 7, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}},
+[{"pk": 1, "model": "products.category", "fields": {"name": "aromatherapy_massage", "friendly_name": "Aromatherapy & Massage"}},  {"pk": 2, "model": "products.category", "fields": {"name": "essential", "friendly_name": "Essential"}}, {"pk": 3, "model": "products.category", "fields": {"name": "candles", "friendly_name": "Candles"}},
+{"pk": 4, "model": "products.category", "fields": {"name": "soap", "friendly_name": "Soap"}},
+{"pk": 5, "model": "products.category", "fields": {"name": "reed", "friendly_name": "Reed"}},
+{"pk": 6, "model": "products.category", "fields": {"name": "electric", "friendly_name": "Electric"}}, 
+{"pk": 7, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}},
 {"pk": 8, "model": "products.category", "fields": {"name": "special_occasions", "friendly_name": "Special Occasions"}},
 {"pk": 9, "model": "products.category", "fields": {"name": "Classes", "friendly_name": "Classes"}}]
