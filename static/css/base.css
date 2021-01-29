@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/homepage_background4.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 116px);
     color: #555;
     font-family: 'Fraunces', serif;
     margin-top: 150px;
@@ -69,6 +69,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 /* -------------------------------- Media Queries */
