@@ -27,9 +27,9 @@
                 Candles & Soaps
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="candle-link">
-                <a href="" class="dropdown-item">Candles</a>
-                <a href="" class="dropdown-item">Soaps</a>
-                <a href="" class="dropdown-item">All Home Scent</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
+                <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Soaps</a>
+                <a href="{% url 'products' %}?category=candles,soaps" class="dropdown-item">All Home Scent</a>
             </div>
         </li>
 
@@ -38,11 +38,11 @@
                 Diffusers & Oils
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="candle-link">
-                <a href="" class="dropdown-item">Reed</a>
-                <a href="" class="dropdown-item">Electric</a>
-                <a href="" class="dropdown-item">Aromatherapy</a>
-                <a href="" class="dropdown-item">Essential</a>
-                <a href="" class="dropdown-item">All Diffusers & Oils</a>
+                <a href="{% url 'products' %}?category=reed" class="dropdown-item">Reed</a>
+                <a href="{% url 'products' %}?category=electric" class="dropdown-item">Electric</a>
+                <a href="{% url 'products' %}?category=aromatherapy" class="dropdown-item">Aromatherapy</a>
+                <a href="{% url 'products' %}?category=essential" class="dropdown-item">Essential</a>
+                <a href="{% url 'products' %}?category=reed,electric,aromatherapy,essential" class="dropdown-item">All Diffusers & Oils</a>
             </div>
         </li>
 
@@ -51,10 +51,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Special Occasions</a>
-                <a href="" class="dropdown-item">Classes</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=special_occasions" class="dropdown-item">Special Occasions</a>
+                <a href="{% url 'products' %}?category=classes" class="dropdown-item">Classes</a>
+                <a href="{% url 'products' %}?category=new_arrivals,special_occasions,classes" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
