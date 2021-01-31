@@ -5,11 +5,10 @@ html {
 body {
     background: url('/media/homepage_background4.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 116px);
+    height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Fraunces', serif;
-    margin-top: 150px;
-    } 
+    font-family: 'Lato';
+}
 
 /* from Bulma */
 .icon {
@@ -37,6 +36,19 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -92,16 +104,10 @@ a.category-badge > span.badge:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-    .container {
+  .container {
     max-width: 80%;
-    }
+  }
 }
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px){}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px){}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
