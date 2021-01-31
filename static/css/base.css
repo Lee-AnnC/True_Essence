@@ -102,6 +102,10 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.h2, h2 {
+    font-size: 2rem;
+    margin-top: 150px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -109,7 +113,6 @@ a.category-badge > span.badge:hover {
     .container {
     max-width: 80%;
     }
-    
 }
 
 /* fixed top navbar only on medium and up */
