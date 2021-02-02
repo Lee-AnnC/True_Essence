@@ -106,6 +106,26 @@ a.category-badge > span.badge:hover {
     font-size: 2rem;
     margin-top: 150px;
 }
+
+.h1, h1 {
+    margin-top: 200px;
+}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
