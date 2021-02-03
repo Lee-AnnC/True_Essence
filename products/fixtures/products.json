@@ -362,5 +362,89 @@
     "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/essential-geranium-oil-royalty-free-image-507749328-1558628673.jpg?crop=0.665xw:1.00xh;0.196xw,0&resize=768:*",
     "image": "geranium_oil.jpg"
     }
+    },
+    {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+    "sku": "teeselemi1",
+    "name": "Elemi Essential Oil",
+    "description": "This oil is a close relative of Frankincense and Myrrh. It has the ability to rejuvenate and restore healthy skin.",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://www.aosproduct.com/products-photos/38-elemi-oil.jpg",
+    "image": "elemi_oil.jpg"
+    }
+    },
+    {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+    "sku": "teessandwd1",
+    "name": "Sandlewood Essential Oil",
+    "description": "This oil promotes a healthy skin and decreases the appearance of scars.It is also used as a mood enhancer and a natural deoderant",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://cdn.essentialoilhaven.com/cms/wp-content/uploads/2018/03/sandalwood-essential-oil-1024x684.jpg",
+    "image": "sandlewood_oil.jpg"
+    }
+    },
+    {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+    "sku": "teesberg1",
+    "name": "Bergamot Essential Oil",
+    "description": "This amazing oil works as a powerful antidepressant and relieves stress. It also kills germs and bacteria",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://image.freepik.com/free-photo/bergamot-essential-oil-with-bergamot-fruit_252965-188.jpg",
+    "image": "bergamot_oil.jpg"
+    }
+    },
+    {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+    "sku": "teeswntgrn1",
+    "name": "Wintergreen Essential Oil",
+    "description": "This amazing oil soothes muscle aches and reduces the apperance of blemishes.",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://www.decor-essentials.com/wp-content/uploads/2020/03/beauty-spa_page-0021-scaled.jpg",
+    "image": "wintergreen_oil.jpg"
+    }
+    },
+    {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+    "sku": "teesylyl1",
+    "name": "Ylang_Ylang Essential Oil",
+    "description": "This oil reduces inflamation, enhances ones mood, boosts self-esteem and is used to reduce free radicals",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://i0.wp.com/www.mkexportsindia.com/wp-content/uploads/2020/04/benefits-of-ylang-ylang-essential-oil.jpg?ssl=1",
+    "image": "ylang_ylang_oil.jpg"
+    }
+    },
+    {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+    "sku": "teesorange1",
+    "name": "Orange Essential Oil",
+    "description": "This oil helps to boost immunity, relaxes muscular and nervous spasms and allieviates anger, anxiety and depression",
+    "price": 9.99,
+    "category": 6,
+    "rating": 4.7,
+    "image_url": "https://cdn2.stylecraze.com/wp-content/uploads/2018/11/6-Best-Uses-Of-Orange-Essential-Oil-You-Need-To-Know-Today.jpg",
+    "image": "orange_essential_oil.jpg"
+    }
     }
 ]
