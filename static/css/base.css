@@ -116,6 +116,10 @@ a.category-badge > span.badge:hover {
     margin-top: 200px;
 }
 
+.bg-warning {
+    background-color: #cc80ff!important;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
