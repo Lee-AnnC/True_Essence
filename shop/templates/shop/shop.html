@@ -15,24 +15,36 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-10 offset-1 text-center mt-3">
-                <h2 class="logo-font">About Us</h2>
-                <img src="/media/about_us1.jpg" alt="lavender fields" class="responsive"><br>
-                <h3>Welcome to True Essence.</h3><br>
-                <p>We are a family run business and all our products are lovingly hand made.<br>
-                With more than 15 years experience we harvest and distill our own essential oils,<br>
-                Our passion for oils can clearly be seen in the soaps and candles that we make.</p>
+                <h2 class="logo-font">Our Shop</h2>
             </div>
+        <div class="sidenav">
+            <button class="dropdown-btn">Candles & Soaps 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
+                <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Soaps</a>
+                <a href="{% url 'products' %}?category=candles,soaps" class="dropdown-item">All Home Scent</a>
+            </div>
+            <button class="dropdown-btn">Diffusers & Oils 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{% url 'products' %}?category=reed" class="dropdown-item">Reed</a>
+                <a href="{% url 'products' %}?category=electric" class="dropdown-item">Electric</a>
+                <a href="{% url 'products' %}?category=aromatherapy" class="dropdown-item">Aromatherapy</a>
+                <a href="{% url 'products' %}?category=essential" class="dropdown-item">Essential</a>
+                <a href="{% url 'products' %}?category=reed,electric,aromatherapy,essential" class="dropdown-item">All Diffusers & Oils</a>
+            <button class="dropdown-btn">Special Offers 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=special_occasions" class="dropdown-item">Special Occasions</a>
+                <a href="{% url 'products' %}?category=classes" class="dropdown-item">Classes</a>
+                <a href="{% url 'products' %}?category=new_arrivals,special_occasions,classes" class="dropdown-item">All Specials</a>
         </div>
-    </div>
-</section>        
 
-        <div class="row">
-            <div class="col-10 offset-1">
-                <div class="videoWrapper">
-                    <iframe width="635" height="349" src="https://www.youtube.com/embed/fBtuUUTbTyw" frameborder="0" allowfullscreen></iframe> 
-                </div>
-            </div>
-        </div>
     <!-- Footer -->
         <footer class="footer-all">
             <div class="pt-2 pt-md-4">
