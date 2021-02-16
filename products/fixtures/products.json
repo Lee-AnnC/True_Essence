@@ -7,7 +7,7 @@
     "name": "White 3 pack Essential Oils Diffusers",
     "description": "These are electric diffusers and make a wonderful addition to any room. They come with your choice of 20ml essential oil. available online only",
     "price": 93.99,
-    "category": 4,
+    "category": 5,
     "rating": 4.9,
     "image_url": "https://mydecorative.com/wp-content/uploads/2020/08/scented-oil-diffusers.jpg",
     "image": "3pk_white_difuser.jpg"
@@ -21,7 +21,7 @@
     "name": "Black Fluted Aroma Diffuser",
     "description": "This luxurious dark wood diffuser adds a touch of elegance to any room. It comes with your choice of 20ml essential oil",
     "price": 58.99,
-    "category": 4,
+    "category": 3,
     "rating": 4.6,
     "image_url": "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/06/GettyImages-1094625712_header-1024x575.jpg?w=1155&h=1528",
     "image": "black_fluted_aroma_diffuser.jpg"
@@ -35,7 +35,7 @@
     "name": "Remote Control Aromatherapy Diffuser.",
     "description": "This amazing aromatherapy diffuser is remote control. Adjust the settings without having to get up or enter the room. Great for kid’s rooms",
     "price": 105.99,
-    "category": 4,
+    "category": 5,
     "rating": 4.5,
     "image_url": "https://www.tadmorcompany.com/wp-content/uploads/2019/03/Remote-Control-Aromatherapy-Diffuser-Humidifier2.jpg",
     "image": "Remote-Control-Aromatherapy-Diffuser.jpg"
@@ -49,7 +49,7 @@
     "name": "USB Powered Diffuser",
     "description": "Perfectly portable this diffuser plugs into any USB port",
     "price": 33.99,
-    "category": 7,
+    "category": 5,
     "rating": 4.8,
     "image_url": "https://cdni.onedayonly.co.za/catalog/product/159/861/1598617410.097.jpeg?auto=compress&w=800&h=800&bg=fff&fit=fill",
     "image": "USB_powered_diffuser.jpg"
@@ -63,7 +63,7 @@
     "name": "Wooden fluted Aroma Diffuser",
     "description": "This beautiful light wood diffuser adds a touch of elegance to a room. It comes with your choice of 20ml essential oil",
     "price": 58.99,
-    "category": 4,
+    "category": 3,
     "rating": 3.8,
     "image_url": "https://cdn.shopify.com/s/files/1/0343/8483/8715/articles/BVU_Blog_Images_21_1024x.png?v=1602707686",
     "image": "wooden-flute-diffuser.jpg"
@@ -175,7 +175,7 @@
     "name": "Scented Candles in a Jar",
     "description": "These lovely candles come in all shapes and sizes and all in a jar. They are amazingly decorative and light weight",
     "price": 29.99,
-    "category": 7,
+    "category": 5,
     "rating": 5,
     "image_url": "https://3.imimg.com/data3/ON/OK/MY-2/scented-candles-250x250.jpg",
     "image": "scented-candles-in-jar.jpg"
@@ -189,7 +189,7 @@
     "name": "Lavender Gift Pack",
     "description": "This beautiful Lavender pack consists of lavender soap, salt and a candle. Something for that special someone or just spoil yourself",
     "price": 49.99,
-    "category": 8,
+    "category": 6,
     "rating": 4.3,
     "image_url": "https://www.soulandspiritmagazine.com/wp-content/uploads/2016/03/shutterstock_101867365-590x394.jpg",
     "image": "gift_pack_lavender.jpg"
@@ -203,7 +203,7 @@
     "name": "Candle Gift Basket",
     "description": "An amazing gift to give. This basket comes with 10 different sized scented candles. Something for that special someone or just spoil yourself",
     "price": 109.99,
-    "category": 8,
+    "category": 6,
     "rating": 4.3,
     "image_url": "https://kelownacandlefactory.com/wp-content/uploads/bfi_thumb/95-basket-mje87ufbb4gexhigdovzjot23vyls1a8unw0gbs2m8-mknqvy30ki71ra6yxunyxtd6zolinp7e1tk0hj7gow.jpg",
     "image": "candle_gift_basket.jpg"
@@ -217,7 +217,7 @@
     "name": "Aromatherapy Basket",
     "description": "A new arrival this month. This beautiful gift basket contains bath salts, soap and  a candle all scented with white lilly to add a calming effect to your day",
     "price": 99.99,
-    "category": 7,
+    "category": 6,
     "rating": 4.7,
     "image_url": "https://i.etsystatic.com/25814568/r/il/551bf2/2750991335/il_fullxfull.2750991335_n8cc.jpg",
     "image": "Aromatherapy_basket.jpg"
@@ -231,7 +231,7 @@
     "name": "Aromatherapy Diffuser Basket",
     "description": "A new arrival this month. This beautiful gift basket contains an electric diffuser with 3 essential oils.  The perfect Gift",
     "price": 109.99,
-    "category": 7,
+    "category": 5,
     "rating": 4.7,
     "image_url": "https://www.pinkeepromise.com/image/cache/catalog/Gifts%20N%20Infusers/GiftBaskets/essentialOils/Medium/PA095217-1000x1000.jpg",
     "image": "diffuser_gift_basket.jpg"
@@ -311,137 +311,123 @@
     "pk": 23,
     "model": "products.product",
     "fields": {
-    "sku": "temassoil1",
-    "name": "Massage Oils",
-    "description": "These wonderful oils can be bought all together in a pack or separately. Each oil has its own amazing properties suited for massage",
-    "price": 9.99,
-    "category": 5,
-    "rating": 4.2,
-    "image_url": "https://cdn.shopify.com/s/files/1/0956/7354/files/Aromatherapy_Massage_Oils.jpg?v=1519295328",
-    "image": "massage_oils.jpg"
-    }
-    },
-    {
-    "pk": 24,
-    "model": "products.product",
-    "fields": {
     "sku": "teesscit1",
     "name": "Citrus Essential Oils",
     "description": "These amazing oils come in either orange, lemon or grapefruit. All 3 have stress relieving and mood lifting properties. The oils can be bought all together or separately",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://www.drinkpreneur.com/wp-content/uploads/2017/02/drinkpreneur_lemon-oi.jpg",
     "image": "citrus_essential_oils.jpg"
     }
     },
     {
-    "pk": 25,
+    "pk": 24,
     "model": "products.product",
     "fields": {
     "sku": "teesspemt1",
     "name": "Peppermint Essential Oil",
     "description": "This oil has amazing medicinal properties and can heal migraines and headaches naturally",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bottle-of-peppermint-essential-oil-royalty-free-image-869499700-1558628323.jpg?crop=0.669xw:1.00xh;0.198xw,0&resize=768:*",
     "image": "peppermint_oil.jpg"
     }
     },
     {
-    "pk": 26,
+    "pk": 25,
     "model": "products.product",
     "fields": {
     "sku": "teesger1",
     "name": "Geranium Essential Oil",
     "description": "This oil has amazing medicinal properties. It helps with hormonal headaches naturally",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/essential-geranium-oil-royalty-free-image-507749328-1558628673.jpg?crop=0.665xw:1.00xh;0.196xw,0&resize=768:*",
     "image": "geranium_oil.jpg"
     }
     },
     {
-    "pk": 27,
+    "pk": 26,
     "model": "products.product",
     "fields": {
     "sku": "teeselemi1",
     "name": "Elemi Essential Oil",
     "description": "This oil is a close relative of Frankincense and Myrrh. It has the ability to rejuvenate and restore healthy skin.",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://www.aosproduct.com/products-photos/38-elemi-oil.jpg",
     "image": "elemi_oil.jpg"
     }
     },
     {
-    "pk": 28,
+    "pk": 27,
     "model": "products.product",
     "fields": {
     "sku": "teessandwd1",
     "name": "Sandlewood Essential Oil",
     "description": "This oil promotes a healthy skin and decreases the appearance of scars.It is also used as a mood enhancer and a natural deoderant",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://cdn.essentialoilhaven.com/cms/wp-content/uploads/2018/03/sandalwood-essential-oil-1024x684.jpg",
     "image": "sandlewood_oil.jpg"
     }
     },
     {
-    "pk": 29,
+    "pk": 28,
     "model": "products.product",
     "fields": {
     "sku": "teesberg1",
     "name": "Bergamot Essential Oil",
     "description": "This amazing oil works as a powerful antidepressant and relieves stress. It also kills germs and bacteria",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://image.freepik.com/free-photo/bergamot-essential-oil-with-bergamot-fruit_252965-188.jpg",
     "image": "bergamot_oil.jpg"
     }
     },
     {
-    "pk": 30,
+    "pk": 29,
     "model": "products.product",
     "fields": {
     "sku": "teeswntgrn1",
     "name": "Wintergreen Essential Oil",
     "description": "This amazing oil soothes muscle aches and reduces the apperance of blemishes.",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://www.decor-essentials.com/wp-content/uploads/2020/03/beauty-spa_page-0021-scaled.jpg",
     "image": "wintergreen_oil.jpg"
     }
     },
     {
-    "pk": 31,
+    "pk": 30,
     "model": "products.product",
     "fields": {
     "sku": "teesylyl1",
     "name": "Ylang_Ylang Essential Oil",
     "description": "This oil reduces inflamation, enhances ones mood, boosts self-esteem and is used to reduce free radicals",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://i0.wp.com/www.mkexportsindia.com/wp-content/uploads/2020/04/benefits-of-ylang-ylang-essential-oil.jpg?ssl=1",
     "image": "ylang_ylang_oil.jpg"
     }
     },
     {
-    "pk": 32,
+    "pk": 31,
     "model": "products.product",
     "fields": {
     "sku": "teesorange1",
     "name": "Orange Essential Oil",
     "description": "This oil helps to boost immunity, relaxes muscular and nervous spasms and allieviates anger, anxiety and depression",
     "price": 9.99,
-    "category": 6,
+    "category": 4,
     "rating": 4.7,
     "image_url": "https://cdn2.stylecraze.com/wp-content/uploads/2018/11/6-Best-Uses-Of-Orange-Essential-Oil-You-Need-To-Know-Today.jpg",
     "image": "orange_essential_oil.jpg"

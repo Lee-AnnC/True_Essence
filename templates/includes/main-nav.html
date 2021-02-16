@@ -1,46 +1,27 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'shop' %}">Online Shop</a>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="candles-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Candles & Soaps
+                Online Shop
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="candle-link">
                 <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
                 <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Soaps</a>
-                <a href="{% url 'products' %}?category=candles,soaps" class="dropdown-item">All Home Scent</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="difusers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Diffusers & Oils
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="candle-link">
-                <a href="{% url 'products' %}?category=reed" class="dropdown-item">Reed</a>
-                <a href="{% url 'products' %}?category=electric" class="dropdown-item">Electric</a>
-                <a href="{% url 'products' %}?category=aromatherapy" class="dropdown-item">Aromatherapy</a>
-                <a href="{% url 'products' %}?category=essential" class="dropdown-item">Essential</a>
-                <a href="{% url 'products' %}?category=reed,electric,aromatherapy,essential" class="dropdown-item">All Diffusers & Oils</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=diffusers" class="dropdown-item">Diffusers</a>
+                <a href="{% url 'products' %}?category=oils" class="dropdown-item">Oils</a>
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=special_occasions" class="dropdown-item">Special Occasions</a>
-                <a href="{% url 'products' %}?category=classes" class="dropdown-item">Classes</a>
-                <a href="{% url 'products' %}?category=new_arrivals,special_occasions,classes" class="dropdown-item">All Specials</a>
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#}">Our Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">Contact Us</a>
         </li>
     </ul>
 </div>
