@@ -240,7 +240,12 @@ ul#social-icon a:hover {
     overflow-y: auto;
 }
 
+/* -------------------------------- Blog */
 
+.blog_body{
+background-color: #eee;
+color: #222;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens*/ 
