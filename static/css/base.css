@@ -84,8 +84,8 @@ body {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: 50%;
 }
 
 a.category-badge > span.badge:hover {
@@ -124,6 +124,12 @@ a.category-badge > span.badge:hover {
 
 .form {
     text-align: center;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 406px;
+    height: 86px;
 }
 .bg-warning {
     background-color: #cc80ff!important;
@@ -254,52 +260,6 @@ ul#social-icon a:hover {
 }
 /* -------------------------------- Media Queries */
 
-    @media (max-width: 300px) {
-    .display-4 {
-        font-size: 2.5rem;
-        font-weight: 300;
-        line-height: 1.2;
-        padding-top: 20px;
-    }
-    .h4, h4 {
-        font-size: 1.2rem;
-    }
-    .h2, h2 {
-        font-size: 1.7rem;
-        margin-top: px;
-        padding-top: 40px;
-    }
-    .h3, h3 {
-        margin-top: 60px;
-    }
-    .col-10 {
-        padding-bottom: 15px;
-    }
-    .form-group {
-        width: 250px;
-    margin-left: 10px;
-    }
-}
-
-    @media (max-width: 576px) {
-        .display-4 {
-        font-size: 2.5rem;
-        font-weight: 300;
-        line-height: 1.2;
-        padding-top: 20px;
-    }
-    .h4, h4 {
-        font-size: 1.2rem;
-    }
-    .h2, h2 {
-        font-size: 1.7rem;
-        margin-top: 90px;
-        padding-top: 40px;
-    }
-    .col-10 {
-        padding-bottom: 15px;
-    }
-}
 
     @media (max-width: 768px) {
     .display-4 {
@@ -360,20 +320,7 @@ ul#social-icon a:hover {
     .container {
     max-width: 80%;
     }
-    .responsive {
-        width: 90%;
-        height: 50%;
-    }
-    .videoWrapper {
-        position: center;
-        height: 950px;
-        margin-left: 70px;
-    }
-    .form-group {
-        align-items: right;
-        
-    }
-}
+
 
 /* Allauth form formatting */
 
