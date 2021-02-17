@@ -122,10 +122,10 @@ a.category-badge > span.badge:hover {
     margin-top: 200px;
 }
 
+/*--------------------------Contact */
 .form-horizontal {
     margin-left: 150px;
 }
-
 
 .contact {
     margin-top: 180px;
@@ -147,6 +147,71 @@ textarea {
     width: 406px;
     height: 86px;
 }
+
+/*------------------------Blog */
+
+.blog.body {
+    font-family: Arial;
+    padding: 20px;
+
+}
+
+/* Header/Blog Title */
+.blog.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    
+    }
+
+    
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.blog.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.blog.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.blog.card {
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.blog.leftcolumn, .blog.rightcolumn {
+    width: 100%;
+    padding: 0;
+    }
+}
+
+
+
+
+
 .bg-warning {
     background-color: #cc80ff!important;
 }
