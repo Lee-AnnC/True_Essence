@@ -122,9 +122,25 @@ a.category-badge > span.badge:hover {
     margin-top: 200px;
 }
 
-.form {
-    text-align: center;
+.form-horizontal {
+    margin-left: 150px;
 }
+
+
+.contact {
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.contact.img {
+    vertical-align: middle;
+    width: 650px;
+    height: 350px;
+    margin-left: 320px;
+}
+.header{
+    margin-left:300px;
+}
+
 textarea {
     overflow: auto;
     resize: vertical;
@@ -318,8 +334,9 @@ ul#social-icon a:hover {
 /* Slightly larger container on xl screens*/ 
 @media (min-width: 1200px) {
     .container {
-    max-width: 80%;
+        max-width: 80%;
     }
+}
 
 
 /* Allauth form formatting */
