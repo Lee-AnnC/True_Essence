@@ -85,7 +85,7 @@ body {
 
 .responsive {
     width: 60%;
-    height: 50%;
+    
 }
 
 a.category-badge > span.badge:hover {
@@ -122,6 +122,7 @@ a.category-badge > span.badge:hover {
     margin-top: 200px;
 }
 
+
 /*--------------------------Contact */
 .form-horizontal {
     margin-left: 150px;
@@ -150,47 +151,59 @@ textarea {
 
 /*------------------------Blog */
 
-.blog.body {
+body {
     font-family: Arial;
     padding: 20px;
-
+    background: #f1f1f1;
 }
 
 /* Header/Blog Title */
-.blog.header {
+.header {
     padding: 30px;
     font-size: 40px;
     text-align: center;
-    
-    }
+    margin-left: 0;
 
-    
+}
+h1 {
+    margin-top: 140px;
+}
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.blog.leftcolumn {
+.leftcolumn {
     float: left;
     width: 75%;
 }
 
 /* Right column */
-.blog.rightcolumn {
+.rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
 }
 
 /* Fake image */
-.img {
+.fakeimg {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
 }
 
 /* Add a card effect for articles */
-.blog.card {
-    padding: 20px;
-    margin-top: 20px;
-    
+.card-blog {
+    background-color: plum;
+    width: 600px;
+    margin-left: 200px
+}
+.card-blog-right {
+    margin-left: -200px;
+    margin-right: 150px;
+    background-color: plum;
 }
 
 /* Clear floats after the columns */
@@ -199,18 +212,6 @@ textarea {
     display: table;
     clear: both;
 }
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-.blog.leftcolumn, .blog.rightcolumn {
-    width: 100%;
-    padding: 0;
-    }
-}
-
-
-
-
 
 .bg-warning {
     background-color: #cc80ff!important;
@@ -335,16 +336,13 @@ ul#social-icon a:hover {
     overflow-y: auto;
 }
 
-/* -------------------------------- Blog */
-/* -------------------------------- Contact */
 
-}
 /* -------------------------------- Media Queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
+.container {
     max-width: 80%;
-  }
+}
 }
 
 /* Allauth form formatting */
@@ -453,6 +451,14 @@ ul#social-icon a:hover {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
     }
 }
 
