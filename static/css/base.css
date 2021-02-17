@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background-color: #f1f1f1;
     background: url('/media/homepage_background4.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -133,10 +134,9 @@ a.category-badge > span.badge:hover {
     margin-left: 50px;
 }
 .contact.img {
-    vertical-align: middle;
     width: 650px;
     height: 350px;
-    margin-left: 320px;
+    margin-left: 280px;
 }
 .header{
     margin-left:300px;
@@ -154,7 +154,6 @@ textarea {
 body {
     font-family: Arial;
     padding: 20px;
-    background: #f1f1f1;
 }
 
 /* Header/Blog Title */
