@@ -36,7 +36,9 @@
     {% block extra_js %}
     {% endblock %}
 
+    {% block title %}
     <title>True Essence {% block extra_title %}{% endblock %}</title>
+    {% endblock %}
 </head>
     <body>
     <header class="container-fluid fixed-top">
@@ -136,8 +138,11 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+        <br/>
+        {% block content %}
+        
+        {% endblock %}
+    
         
     {% block postloadjs %}
     <script type="text/javascript">

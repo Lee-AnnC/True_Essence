@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+{% block content %}
+<section class="blog" id="blog">
+    <div class="overlay bg-#f2e6ff"></div>
+    <div class="container">
+
+
+
+<h1>{{ post.title }}</h1>
+<small>By: {{ post.author.first_name }}{{ post.author.last_name }}
+    <a href="{% url 'update_post' post.pk %}">Edit</a></small><br/>
+<hr>
+<br/>
+{{ post.body }}
+
+
+<br/><br/>
+<a href="{% url 'BlogView' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}

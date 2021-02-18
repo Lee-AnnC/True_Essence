@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Edit Blog Post{% endblock %}
+
+
+{% block content %}
+<section class="blog" id="blog">
+    <div class="overlay bg-#f2e6ff"></div>
+    <div class="container">
+
+<h1>Update Post</h1>
+<br/><br/>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-secondary">Update</button>
+    </form>
+</div>
+{% endblock %}
