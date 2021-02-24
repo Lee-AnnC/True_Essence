@@ -6,35 +6,91 @@
 <section class="blog" id="blog">
     <div class="overlay bg-#f2e6ff"></div>
     <div class="container">
-        <div class="row">
-            <h1>Our Essential Gardening Blog</h1>
-                <img src="/media/lavender_garden1.jpg" alt="lavender garden">
-            <div class="col-lg-2">
-            <br/>
-            <h3>breakdown</h3>
-                <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                <a class="nav-link active" aria-current="page" href="{% url 'add_post' %}">Add Post</a>
-</div>
-            </div>
-        </div>
+        <div class="row text align-center">
+            <img src="/media/lavender_garden1.jpg" alt="lavender garden">
 
-<h1>Posts</h1>
+            <br/>
+            <h2>Our Latest Blog</h2>
+            <div class="container-fluid">
+            <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <br/>
+                                <a href="#">All</a></li><br/><br/>
+                                <li class="divider"></li>
+                                <li><a href="#">Gardening</a></li><br/><br/>
+                                <li class="divider"></li>
+                                <li><a href="#">Medical Properties</a></li><br/><br/>
+                                <li class="divider"></li>
+                                <li><a href="#">Recipes</a></li><br/><br/>
+                                <li class="divider"></li>
+                                <li><a href="{% url 'add_post' %}">Add a Post</a></li>
+                            </ul>
+                    </div>
+                </nav>
+            <div class="col-lg-3 card-width-small ">
+                <img src="/media/soap3.jpg" class="card-img-top" alt="Soaps">
+                <div class="card-body bg-white text-dark">
+                    <h5 class="card-title">Create Your Own Scented Soap.</h5>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3-right card-width-small">
+                <img src="/media/easy_candles.jpg" class="card-img-top" alt="candles">
+                <div class="card-body bg-white text-dark">
+                    <h5 class="card-title">Easy Candle Recipe</h5>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 card-width-large">
+                <img src="/media/essential_oils.jpg" class="card-img-top" alt="essential oils">
+                <div class="card-body bg-white text-dark">
+                    <h5 class="card-title">Medicinal Properties of Oils</h5>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 card-width-large">
+                <img src="/media/lavender_plants.jpg" class="card-img-top" alt="lavender plants">
+                <div class="card-body bg-white text-dark">
+                    <h5 class="card-title">Which Lavender to Grow</h5>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3-right card-width-small">
+                <img src="/media/peppermint_plants1.jpg" class="card-img-top" alt="candles">
+                <div class="card-body bg-white text-dark">
+                    <h5 class="card-title">Growing Pepermint</h5>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            
+
+
+
+<!--<h1>Posts</h1>
 
 <ul>
 {% for post in object_list %}
-<li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}
-    {{ post.author.last_name }}
-    <small><a href="{% url 'update_post' post.pk %}">Edit</a></small>
-    <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
-    <br/>
+    <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> 
+        
+        <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
+        - {{ post.author.first_name }}
+        - {{ post.author.last_name }}
+        {{post.post_date}} -
+
+        {% if user.is_authenticated %}
+            {% if user.id == post.author.id %}  
+            <small><a href="{% url 'update_post' post.pk %}">Edit</a></small>
+            <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
+            {% endif %}
+        {% endif %}
+        <br/>
     {{ post.body }}</li>
 {% endfor %}
-</ul>
+</ul> -->
 
 {% endblock %}
-    </div>
-</section>
+

@@ -172,46 +172,36 @@ h2 {
     font-size: 2rem;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-    float: left;
-    width: 75%;
+.bg-light {
+    background-color: purple;
+}
+.card-small-extenstion {
+    height: 380px;
+    border: 0 !important;
 }
 
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+.card-hover:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+    z-index: 10;
 }
 
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+.card-body-small-extenstion {
+    height: 380px;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 0 !important;
+}
+.col-lg-6 {
+    width: 520px;
+    float: right;
+}
+.col-lg-3-right {
+    float: right
 }
 
-/* Add a card effect for articles */
-.card-blog {
-    background-color: plum;
-    width: 600px;
-    margin-left: 200px
-}
-.card-blog-right {
-    margin-left: -200px;
-    margin-right: 150px;
-    background-color: plum;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+ 
 .bg-warning {
     background-color: #cc80ff!important;
 }
@@ -440,6 +430,18 @@ ul#social-icon a:hover {
     .header-container {
         padding-top: 164px;
     }
+    .card-large-extenstion {
+        height: 780px;
+        border: 0 !important;
+    }
+    .card-body-large-extenstion {
+        height: 780px;
+        width: auto;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border: 0 !important;
+    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -451,6 +453,58 @@ ul#social-icon a:hover {
     body {
         height: calc(100vh - 116px);
     }
+    .card-large-extenstion {
+        height: 380px;
+        border: 0 !important;
+    }
+
+    .card-body-large-extenstion {
+        height: 380px;
+        width: auto;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border: 0 !important;
+    }
+    .card-width-small {
+    height: 100%;
+}
+
+.card-width-large {
+    height: 100%;
+}
+
+.card-body-extenstion {
+    padding: 0 !important;
+}
+
+.card-img-top-extenstion {
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.card-title-extenstion {
+    z-index: 1;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0 !important;
+}
+
+.card-body-small-extenstion:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
