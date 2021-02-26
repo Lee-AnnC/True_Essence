@@ -23,10 +23,34 @@
 </small><br/>
 <hr>
 <br/>
+
+{% if post.header_image %}
+    <img src="{{ post.header_image.url }}">
+{% endif %}
+<br/><br/>
 {{ post.body|safe }}
 
 
-<br/><br/>
+<br/>
 <a href="{% url 'BlogView' %}" class="btn btn-secondary">Back</a>
+<hr>
+<h1 class="comment">Comments</h1>
+<br/>
+{% if not post.comments.all %}
+    No comments yet <a href="#">Add One</a>
+{% else %}
+
+<a href="">Add Comment</a>
+<br/><br/>
+    {% for comment in post.comments.all %}
+        <strong>
+            {{ comment.name }} -
+            {{ comment.date_added }}
+        </strong>
+        <br/>
+        {{ comment.body }}
+        <br/>
+    {% endfor %}
+{% endif %}
 
 {% endblock %}

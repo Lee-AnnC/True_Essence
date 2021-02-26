@@ -17,8 +17,17 @@
                 <a href="{% url 'products' %}?category=special_occasions" class="dropdown-item">Special Occasions</a>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'BlogView' %}">Our Blog</a>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our Blog
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-link">
+                <a href="{% url 'BlogView'%}" class="dropdown-item">All</a>
+                <a href="#" class="dropdown-item">Gardening</a>
+                <a href="#" class="dropdown-item">Medical Properties</a>
+                <a href="#" class="dropdown-item">Recipes</a>
+                <a href="{% url 'add_post' %}" class="dropdown-item">Add a Post</a>
+            </div>
         </li>
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}">Contact Us</a>

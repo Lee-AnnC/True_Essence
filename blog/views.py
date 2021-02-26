@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import View, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category
 from .forms import PostForm, EditForm
 from django.urls import reverse_lazy
@@ -10,10 +10,17 @@ from django.urls import reverse_lazy
 #    return render(request, 'blog/blog.html', {})
 
 
-class BlogView(ListView):
-    model = Post
-    template_name = 'blog/blog.html'
-    ordering = ['-id']
+#class BlogView(ListView):
+    #model = Post
+    #template_name = 'blog/blog.html'
+    #ordering = ['-id']
+
+class BlogView(View):
+    def get(self, request, *args, **kwargs):
+        posts = Post.objects.all()
+        categories = Category.objects.all()
+        context = {'posts': posts, 'categories': categories}
+        return render(request, "blog/blog.html", context=context)
 
 
 def CategoryView(request, category):

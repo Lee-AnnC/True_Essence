@@ -171,37 +171,12 @@ h2 {
     margin-top: 0;
     font-size: 2rem;
 }
-
-.bg-light {
-    background-color: purple;
+.blog-row {
+    height: 0;
 }
-.card-small-extenstion {
-    height: 380px;
-    border: 0 !important;
+.comment {
+    margin-top: 0;
 }
-
-.card-hover:hover {
-    background-color: rgb(255, 255, 255, 0.3);
-    z-index: 10;
-}
-
-.card-body-small-extenstion {
-    height: 380px;
-    width: auto;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border: 0 !important;
-}
-.col-lg-6 {
-    width: 520px;
-    float: right;
-}
-.col-lg-3-right {
-    float: right
-}
-
- 
 .bg-warning {
     background-color: #cc80ff!important;
 }
