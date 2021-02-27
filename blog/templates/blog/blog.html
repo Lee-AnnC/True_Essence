@@ -1,124 +1,90 @@
 {% extends 'base.html' %}
 {% block title %}{{ post.title_tag }}{% endblock %}
-
-
 {% block content %}
-section class="blog" id="blog">
+    section class="blog" id="blog">
     <div class="overlay bg-#f2e6ff"></div>
     <div class="container">
         <div class="row text align-center">
-            <img src="/media/lavender_garden1.jpg" alt="lavender garden">
-
-            <br/>
+            <img class="w-100" src="/media/lavender_garden1.jpg" alt="lavender garden">
+        </div>
+        <br/>
         <h2>Our Latest Blog</h2>
-    <div class="container-fluid">
+    </div>
+    <div class="container">
         <div class="row align-items-start">
-        <!--<div class="col-lg-4 card-width-large">
-            <img src="/media/lavender_plants.jpg" class="card-img-top" alt="lavender plants">
-                <div class="card-body bg-white text-dark">
-                    <h5>Gardening</h5>
-                    <ul>
-                    {% for post in object_list %}
-                        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> 
-                            
-                            {{ post.category }}
-                            - {{ post.author.first_name }}
-                            - {{ post.author.last_name }}
-                            {{post.post_date}} -
-
-                            {% if user.is_authenticated %}
-                                {% if user.id == post.author.id %}  
-                                <small><a href="{% url 'update_post' post.pk %}">Edit</a></small>
-                                <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
-                                {% endif %}
-                            {% endif %}
-                            <br/>
-                            {{ post.snippet }}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 card-width-large">
-                <img src="/media/essential_oils1.jpg" class="card-img-top" alt="essential oils">
-                <div class="card-body bg-white text-dark">
-                    <h5>Medicinal Properties of Oils</h5>
-                    
-                </div>
-            </div>
-            <div class="col-lg-4 card-width-large">
-                <img src="/media/soap3.jpg" class="card-img-top" alt="essential oils">
-                <div class="card-body bg-white text-dark">
-                    <h5>Easy Recipes</h5>
-                    
-                </div>
-            </div>-->
             {% for category in categories %}
-                {{category.title}}
-                {% for post in posts %}
-                    {% if post.category == category %}
-                        {{post.title}}
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-
-            <ul>
-                    {% for post in object_list %}
-                        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> 
-                            
-                            <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
-                            - {{ post.author.first_name }}
-                            - {{ post.author.last_name }}
-                            {{post.post_date}} -
-
-                            {% if user.is_authenticated %}
-                                {% if user.id == post.author.id %}  
-                                <small><a href="{% url 'update_post' post.pk %}">Edit</a></small>
-                                <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
+                <div class="col-lg-4 card-width-large">
+                    <img src="/media/{{ category }}.jpg" class="card-img-top" alt="{{ category.name }}">
+                    <div class="card-body bg-white text-dark">
+                        <h5>{{ category|upper }}</h5>
+                        <ul>
+                            {% for post in posts %}
+                                {% if post.category == category %}
+                                    <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>
+                                        {{ post.category }}
+                                        - {{ post.author.first_name }}
+                                        - {{ post.author.last_name }}
+                                        {{ post.post_date }} -
+                                        {% if user.is_authenticated %}
+                                            {% if user.id == post.author.id %}
+                                                <small><a
+                                                        href="{% url 'update_post' post.pk %}">Edit</a></small>
+                                                <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
+                                            {% endif %}
+                                        {% endif %}
+                                        <br/>
+                                        {{ post.snippet }}
+                                    </li>
                                 {% endif %}
-                            {% endif %}
-                            <br/>
-                            {{ post.snippet }}
-                        </li>
-                    {% endfor %}
-                    </ul>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     <!-- Footer -->
-        <footer class="footer-all">
-            <div class="pt-2 pt-md-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h5 class="footer-title">Quick links</h5>
-                            <ul class="footer-list">
-                                <li><a href="">Online Shop</a></li>
-                                <li><a href="{% url 'about' %}">About</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </div>
+    <footer class="footer-all">
+        <div class="pt-2 pt-md-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5 class="footer-title">Quick links</h5>
+                        <ul class="footer-list">
+                            <li><a href="">Online Shop</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="second-footer-panel">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <ul id="social-icon" class="text-center">
-                                <li class="mr-2">
-                                    <a href="https://www.linkedin.com/in/lee-ann-clark-2aa03696/" rel="noopener" target="_blank">
-                                        <i class="fab fa-linkedin fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Lee-AnnC" rel="noopener" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 text-center">
-                            <p><span class="mr-3">© Lee-Ann Clark 2021 </span><span>Educational Project purpose Only.</span></p>
-                        </div>
+        </div>
+        <div class="second-footer-panel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul id="social-icon" class="text-center">
+                            <li class="mr-2">
+                                <a href="https://www.linkedin.com/in/lee-ann-clark-2aa03696/"
+                                rel="noopener" target="_blank">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Lee-AnnC" rel="noopener"
+                                target="_blank"><i
+                                        class="fab fa-github-square fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p><span
+                                class="mr-3">© Lee-Ann Clark 2021 </span><span>Educational Project purpose Only.</span>
+                        </p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 {% endblock %}

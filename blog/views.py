@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import View, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category
-from .forms import PostForm, EditForm
+from django.views.generic import View, DetailView, UpdateView, DeleteView, CreateView
+from .models import Post, Category, Comment
+from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
 
 # def blog(request):
@@ -23,11 +23,6 @@ class BlogView(View):
         return render(request, "blog/blog.html", context=context)
 
 
-def CategoryView(request, category):
-    category_posts = Post.objects.filter(category=category.replace('-', ' '))
-    return render(request, 'categories.html', {'category': category.title() .replace('-', ' '), 'category_posts': category_posts})
-
-
 class ArticleDetailView(DetailView):
     model = Post
     template_name = 'article_details.html'
@@ -38,6 +33,15 @@ class AddPostView(CreateView):
     form_class = PostForm
     template_name = 'add_post.html'
     # fields = '__all__'
+
+
+class AddCommentView(CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'add_comment.html'
+    fields = '__all__'
+
+    success_url = reverse_lazy('BlogView')
 
 
 class AddCategoryView(CreateView):

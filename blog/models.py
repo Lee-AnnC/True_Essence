@@ -23,7 +23,7 @@ class Post(models.Model):
     body = RichTextField(blank=True, null=True)
     # body = models.TextField()
     post_date = models.DateField(auto_now_add=True)
-    category = models.CharField(max_length=255, default='gardening')
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     snippet = models.CharField(max_length=255)
 
     def __str__(self):

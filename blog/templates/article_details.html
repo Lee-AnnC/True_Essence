@@ -37,10 +37,10 @@
 <h1 class="comment">Comments</h1>
 <br/>
 {% if not post.comments.all %}
-    No comments yet <a href="#">Add One</a>
+    No comments yet <a href="{% url 'add_comment' post.pk %}">Add One</a>
 {% else %}
 
-<a href="">Add Comment</a>
+<a href="{% url 'add_comment' post.pk %}">Add Comment</a>
 <br/><br/>
     {% for comment in post.comments.all %}
         <strong>
@@ -50,7 +50,10 @@
         <br/>
         {{ comment.body }}
         <br/>
+        
     {% endfor %}
+    <a href="{% url 'add_comment' post.pk %}">Add Comment</a>
 {% endif %}
 
+<br/>
 {% endblock %}
