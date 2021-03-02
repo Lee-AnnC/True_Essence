@@ -22,28 +22,34 @@
     <div class="container">
         <div class="row">
         <div class="col-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="header">Contact us</legend>
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                            </div>
+            <div class="contact-form">
+                <div class="section-heading">
+                    <h2>Contact us </h2>
+                    <div class="line"></div>
+                </div>
+                {% if first_name %}
+                    <center>
+                        <h2>Thanks {{ first_name }}!</h2>
+                        <p>We recieved your email and will respond shortly</p>
+                    </center>
+                    <br>
+                {% else %}
+                <!--Form-->  
+                <form action="{% url 'contact' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="fname" name="first-name" type="text" placeholder="First Name" class="form-control">
                         </div>
+                    </div>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                <input id="lname" name="last-name" type="text" placeholder="Last Name" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
                                 <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="product" name="product" type="text" placeholder="Product Bought" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
@@ -56,13 +62,14 @@
                                 <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                             </div>
                         </div>
-                    </fieldset>
+                    
                 </form>
             </div>
         </div>
         </div>
     </div>
 </section>
+{% endif %}
 
 <!-- Footer -->
         <footer class="footer-all">

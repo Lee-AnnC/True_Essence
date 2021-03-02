@@ -31,9 +31,6 @@
 {{ post.body|safe }}
 
 
-<br/>
-<a href="{% url 'BlogView' %}" class="btn btn-secondary">Back</a>
-<hr>
 <h1 class="comment">Comments</h1>
 <br/>
 {% if not post.comments.all %}
@@ -54,6 +51,8 @@
     {% endfor %}
     <a href="{% url 'add_comment' post.pk %}">Add Comment</a>
 {% endif %}
-
+<br/><br/>
+<hr>
+<a href="{% url 'BlogView' %}" class="btn btn-secondary">Back</a>
 <br/>
 {% endblock %}

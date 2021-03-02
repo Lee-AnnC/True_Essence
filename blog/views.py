@@ -4,6 +4,7 @@ from .models import Post, Category, Comment
 from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
 
+
 # def blog(request):
 #    """ A view to return the blog page """
 
@@ -17,9 +18,15 @@ from django.urls import reverse_lazy
 
 class BlogView(View):
     def get(self, request, *args, **kwargs):
-        posts = Post.objects.all()
-        categories = Category.objects.all()
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            posts = Post.objects.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+        else:
+            posts = Post.objects.all()
+            categories = Category.objects.all()
         context = {'posts': posts, 'categories': categories}
+
         return render(request, "blog/blog.html", context=context)
 
 
@@ -39,7 +46,10 @@ class AddCommentView(CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
-    fields = '__all__'
+
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
 
     success_url = reverse_lazy('BlogView')
 
