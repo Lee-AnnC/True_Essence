@@ -180,9 +180,16 @@ h2 {
 .bg-warning {
     background-color: #cc80ff!important;
 }
-
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+.post-body img {
+    max-width: 100%;
+    max-height: 50%;
+}
+.post-body h2 {
+    margin-top: 12px;
+    padding-top: 0;
 }
 
 /** Footer **/
@@ -529,9 +536,6 @@ ul#social-icon a:hover {
         margin-top: 10px;
         margin-left: 0;
     }
-    .contact-form{
-        margin-top: -30px;
-    }
     .form-group {
         margin-left: 0;
         width: 100%;
@@ -552,6 +556,13 @@ ul#social-icon a:hover {
     }
     .col-10 {
         padding-bottom: 15px;
+    }
+    .header-container {
+        padding-top: 40px;
+    }
+    .logo-font {
+        margin-top: 0;
+        padding-top: 0;
     }
 }
 
