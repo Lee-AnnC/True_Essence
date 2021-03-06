@@ -123,6 +123,10 @@ a.category-badge > span.badge:hover {
     margin-top: 200px;
 }
 
+/* text box widget */
+.django-ckeditor-widget {
+    width: 100%;
+}
 
 /*--------------------------Contact */
 .form-horizontal {
