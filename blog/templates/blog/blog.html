@@ -14,7 +14,7 @@
         <div class="row align-items-start">
             {% for category in categories %}
                 <div class="col-lg-4 card-width-large">
-                    <img src="/media/{{ category }}.jpg" class="card-img-top" alt="{{ category.name }}">
+                    <img src="{{MEDIA_URL}}{{ category }}.jpg" class="card-img-top" alt="{{ category.name }}">
                     <div class="card-body bg-white text-dark">
                         <h5>{{ category|upper }}</h5>
                         <ul>
