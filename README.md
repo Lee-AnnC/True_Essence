@@ -19,7 +19,7 @@ This is how True Essence was born.
     - [Goals](#goals)
         - [Visitor Goals](#visitor-goals)
         - [Business Goals](#business-goals)
-        - [Christmas Baking For Kids Goals](#Christmas-Baking-For-Kids-goals)
+        - [True Essence Goals](#True-Essence-goals)
     - [User Stories](#user-stories)
         - [Visitor Stories](#visitor-stories)
     - [Design Choices](#design-choices)
@@ -35,7 +35,6 @@ This is how True Essence was born.
         - [Contact Page](#contact-page)
         - [Login Page](#log-in-page)
         - [Register Page](#register-page)
-        - [profile Page](#profile-page)
         - [Add Product Page](#add-product-page)
         - [Edit Product Page](#editing-product-page)
         - [Delete Product Modal](#delete-product-modal)
@@ -75,9 +74,10 @@ This is how True Essence was born.
 The target audience for True Essence is:
 
 - Anyone who is looking for a natural way to heal or medicate themselves.
-- Anyone who enjoys being in nature and wants to plant their own essential plant.
-- Anyone who enjoys soap or candle making can now be shown how to do it with oils, or anyone who wants to learn how to.
-- Anyone who is looking to find everything in one place.
+- Anyone who enjoys being in nature and wants to plant and grow their own essential plants.
+- Anyone who enjoys soap or candle making can now be shown how to do it with oils.
+- Anyone who wants to learn how to make soaps or candles.
+- Anyone who is looking to find information on plants, medical ideas or soaps and candles that is all in one place.
 
 User goals are:
 
@@ -98,6 +98,30 @@ True Essence meets these user needs in that:
 
 - The recipes here and all of our products are 100 % naturally made.
 - Our new blog is filled with tips and help and recipies on all things "Essential".
+- This is wonderful in that there are always new and improved ideas to try and recipes to inspire all.
 - Our online store is safe and uses a progrm that protects your data, so you can shop with confidence.
 - With every new order the delivery amount is adjusted depending on the sale amount. Meaning delivery could be free. 
-- This is wonderful in that there are always new and improved ideas to try and recipes to inspire all.
+
+### Business Goals
+
+- To give the user the ease and convinience of shopping in our online store.
+- To give the user the option to increase their shopping to obtain "Free Delivery".
+- To give the user the peace of mind that their payment details are safe.
+- To give the user a place to learn/read about new ideas on essential gardening.
+
+
+Business Owner goals are:
+- To give be able to grow our(the company) brand and customer base
+- To grow the business in areas such as getting customers to come and see the farm
+- To grow the business so that we are able to offer lessons and classes in all things "Essential".
+
+True Essence meets these user needs in that:
+
+- The user has access to the online store and can make purchases from the store. 
+- If the user has logged in, they have access to see their previous purchases under "My Profile page"
+- When the user is purchasing items from the online store, they can see what their total spent is and how much they need to spend to get "Free Delivery".
+- If the user has the correct validated loggin they can add products to the store.
+- The Add-Product page clearly structured and laid out in an easy to understand way.The user has the option to Add their Product, if they are satisfied they can then save their product or delete it.
+- The user interface for the input of products has been controlled to validate input. For example the correct url format is required for the image input.
+- Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
+- To make navigation easy for the user, buttons have been provided on the pages to help direct should they get stuck. For example, cancel, edit, add-recipe etc.
