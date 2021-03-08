@@ -91,7 +91,7 @@
 {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
-        var maxHeight = 100;
+        var maxHeight = 0;
         $(".card-img-top").each(function() {
             if ($(this).height() > maxHeight) {
                 maxHeight = $(this).height();
