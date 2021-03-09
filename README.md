@@ -120,7 +120,7 @@ True Essence meets these user needs in that:
 - The user has access to the online store and can make purchases from the store. 
 - If the user has logged in, they have access to see their previous purchases under "My Profile page"
 - When the user is purchasing items from the online store, they can see what their total spent is and how much they need to spend to get "Free Delivery".
-- If the user has the correct validated loggin they can add products to the store.
+- If the user has the correct validated login they can add products to the store.
 - The Add-Product page clearly structured and laid out in an easy to understand way.The user has the option to Add their Product, if they are satisfied they can then save their product or delete it.
 - The user interface for the input of products has been controlled to validate input. For example the correct url format is required for the image input.
 - Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
@@ -131,4 +131,9 @@ True Essence meets these user needs in that:
 - To provide an easy to navigate site, where people can purchase their favorite oils and keep track of what they have ordered previously in the profile section.
 - To provide a site that is knowledgable in the growing and nurturing of essential oil plants.
 - To provide a site that is knowledgable in the making of scented soaps and candles.
--
+- To grow the brand of True Essence by way of the online shop.
+- To create a regular customer base with the online shop
+
+## User Stories
+
+### Visitor Stories
