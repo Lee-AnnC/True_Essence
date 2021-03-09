@@ -533,7 +533,7 @@ ul#social-icon a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact {
         margin-top: 10px;
         margin-left: 0;
@@ -566,6 +566,9 @@ ul#social-icon a:hover {
         margin-top: 0;
         padding-top: 0;
     }
+    /* .ElementsApp, .ElementsApp .InputElement {
+        font-size: 11px;
+    } */
 }
 
 

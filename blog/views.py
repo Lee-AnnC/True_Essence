@@ -12,10 +12,10 @@ from django.utils.decorators import method_decorator
 #    return render(request, 'blog/blog.html', {})
 
 
-#class BlogView(ListView):
-    #model = Post
-    #template_name = 'blog/blog.html'
-    #ordering = ['-id']
+# class BlogView(ListView):
+# model = Post
+# template_name = 'blog/blog.html'
+# ordering = ['-id']
 
 class BlogView(View):
     def get(self, request, *args, **kwargs):
