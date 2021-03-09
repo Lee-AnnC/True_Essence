@@ -3,7 +3,8 @@ from django.views.generic import View, DetailView, UpdateView, DeleteView, Creat
 from .models import Post, Category, Comment
 from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
-
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # def blog(request):
 #    """ A view to return the blog page """
@@ -35,6 +36,7 @@ class ArticleDetailView(DetailView):
     template_name = 'article_details.html'
 
 
+@method_decorator(login_required, name='dispatch')
 class AddPostView(CreateView):
     model = Post
     form_class = PostForm
@@ -61,6 +63,7 @@ class AddCategoryView(CreateView):
     fields = '__all__'
 
 
+@method_decorator(login_required, name='dispatch')
 class UpdatePostView(UpdateView):
     model = Post
     form_class = PostForm
@@ -68,6 +71,7 @@ class UpdatePostView(UpdateView):
     # fields = ['title', 'title_tag', 'body']
 
 
+@method_decorator(login_required, name='dispatch')
 class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_post.html'
