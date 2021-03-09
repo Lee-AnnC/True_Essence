@@ -125,3 +125,10 @@ True Essence meets these user needs in that:
 - The user interface for the input of products has been controlled to validate input. For example the correct url format is required for the image input.
 - Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
 - To make navigation easy for the user, buttons have been provided on the pages to help direct should they get stuck. For example, cancel, edit, add-recipe etc.
+
+### True Essence Goals
+
+- To provide an easy to navigate site, where people can purchase their favorite oils and keep track of what they have ordered previously in the profile section.
+- To provide a site that is knowledgable in the growing and nurturing of essential oil plants.
+- To provide a site that is knowledgable in the making of scented soaps and candles.
+-
