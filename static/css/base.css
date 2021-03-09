@@ -136,10 +136,12 @@ a.category-badge > span.badge:hover {
     margin-left: 50px;
 }
 .contact-hero {
+    background-color: #f1f1f1;
     background: url('/media/contact2.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(max(25vh, 200px));
+    background-size: 500px 300px;
+    height: calc(max(50vh, 200px));
 }
+    
 .header{
     margin-left:300px;
 }

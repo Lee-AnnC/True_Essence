@@ -137,3 +137,127 @@ True Essence meets these user needs in that:
 ## User Stories
 
 ### Visitor Stories
+
+As a visitor to True Essence I would expect/want/need:
+1. To easily find what I am looking for, I want the site layout to make sense, as varying ages have varying understanding so I dont want to be confused or put off using it. 
+
+2. The information to be laid out in a way that is easy for me to navigate and understand, so I may find what I need quickly and efficiently.
+
+3. The ability to search through the products to find what I need. Then to be able to click and get more detailed information.
+
+4. The ability to search through the blog posts to find what I need. Then to be able to click and get more detailed information.
+
+5. To be able to filter the products and blog posts by name, description or category and find the item that are best suited for my needs.
+
+6. As a someone keen on learning new things, I want to be able to find a recipe that is easy and quick and fun to make.
+
+7. As a user I want my details to be safely kept and not reused or sold.
+
+8. As a user accessing this site from smaller devices such as a mobile phone or tablet, I want the site to be responsive so that it is still easy to navigate. 
+
+9. As a user I want to be able to see a record of my previous purchases.
+
+## Design Choices
+True Essence is an informative and interesting site with products from oils to candles and diffusers. 
+Everything you and your home need.
+
+The following design choices were made with this in mind:
+
+### Colours
+<div align="center">
+    <img src="https://i.ibb.co/n6pz6hJ/True-Essence-Colors.png" alt=True Essence Palette aria-label=True Essence Colors </div>
+
+- The home page is crisp in white header and with yellow lemons and green leaves.
+- The navbar background is kept white all the way through, with a soft lavender as the page overlay for all other pages
+- The product cards have clear white background with black writing on them which show up nicely on the lavender overlay.
+- The blog posts are on a white card with an image of the category.
+- The post links are done in blue so they show up nicely and can be seen straight away in the blog snippit.
+- In the footer two colors were used. A soft pink and a darker purple. This makes the footer stand out more and adds contrast to the page.
+
+### Styling
+- All **buttons** on the site fit the bootstrap button styling in size and shape, I kept the colors of blue and red for the edit and delete buttons and black for the rest of the buttons. 
+- Bootstrap **cards** were utilized on the products page to display the product selection.
+- Bootstrap **cards** were utilized on the blog page to display the category selection, with a link to each category selection page on it. 
+- hover effects
+    - Some subtle **shadows** have been added to the nav bar dropdown menu's. Links have been underlined. All this gives a positive user experience.
+
+## Wireframes
+- [Home Page]()
+- [About Page]()
+- [Product Dropdown Page]()
+- [Blog Page]()
+- [Login Page]()
+- [Register Page]()
+- [Register-mobile]()
+- [Add Blog Page]()
+- [Add Comments Page]()
+
+# Features
+ 
+## Existing Features
+
+### Elements on every page
+- Navbar
+    - The navigation bar features the True Essence logo in the top left corner.
+
+    - For visitors to the site who are not logged in, list items links are available for them to use.
+        1. Home (The logo itself)
+        2. Products (drop down menu of products)
+        3. Blog Posts(Read Only)
+        4. Log In
+        5. Register 
+        6. Shopping Bag
+
+    - For users who are logged in, the list items are as follows: 
+        1. Home (The logo itself)
+        2. Products (drop down menu of products)
+        3. Blog Posts
+        4. Add New Blog
+        5. Shopping Bag
+        6. Product Management
+        7. Profile page
+        8. Log Out
+    
+- Python determines if the user is logged in or not by checking `if 'user' in session` and passes this data to Jinja to display the correct welcome message on the profile page to the user.
+- The navbar is collapsed into a burger icon on small and medium screens, so that menu items do not start overlapping content or headings. 
+
+- Footer
+    - The footer features:
+        - A list of quick links users might need when viewing the footer and wanting to return to a particular page.
+        - Social Media Links 
+        - Copyright information.
+
+### Home Page
+<div align="center">
+<img src="https://i.ibb.co/G7K3mMc/Home-Page.png" alt="True Essence Home Page on all major screen sizes" >
+</div>
+<br>
+
+**Hero Image**
+- True Essence home page features a cheerful and colorful hero image that has bright colors. Bright yellow lemons and green leaves surround a essential oils bottle.
+- This image is coded as a background-image in css and set to `background-size: cover;` so that it is responsive and doesnt distort or stretch. 
+
+**Search Bar**
+- On the top of each page is a Search Bar that was coded in using `Text Index Searching`. The search bar has a search button on the left side of the search bar.
+- The user can search through a set of parameters such as `Product Name` or  `item description` to find the products they are looking for.
+
+### Products Page
+<div align="center">
+<img src="https://i.ibb.co/wgy7T1P/Products-Page.png" alt="True Essence Product Page on all major screen sizes" >
+</div>
+<br>
+
+**Dropdown Product List**
+- This dropdown list is found in the navbar. It is a dropdown list of all products under the online shop nav.At the top is `Candles`, then `Soaps`, `Diffusers`, `Oils`, `New Arrivals` and then `Special Occassions'. 
+- Each selection takes you to the product page of all products added in that category.
+
+### Blog Post Page
+<div align="center">
+<img src="https://i.ibb.co/S3kM37h/Blog-Posts.png" alt="True Essence Product Page on all major screen sizes" >
+</div>
+<br>
+
+**Dropdown Blog List**
+- This dropdown list is found in the navbar. It is a dropdown list of all Blog Posts under the Our Blog nav.At the top is `All`, then `Gardening`, `Medical`, `Recipes`, and `Add Post`. 
+- Each selection takes you to the blog post page of all posts added in that category.
+
