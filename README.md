@@ -407,6 +407,8 @@ The types of data stored for my project are:
 - [Lighthouse Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftrue-essence.herokuapp.com)
 
 ### Manual Testing
+- [browserstack](https://live.browserstack.com/)
+
 - Tested accross mobile devices and web browsers.
 - Web Browsers - 
     - [Opera](https://i.ibb.co/SBtyqC9/opera.png)
@@ -421,8 +423,110 @@ The types of data stored for my project are:
     - [Galexy Tablet](https://i.ibb.co/2KQQ918/galaxy-tablet.png) 
     - [Xiaomie](https://i.ibb.co/K6hNhhS/xiaomi.png)
 
-- Landed on the home page, clicked the Nav bar buttons to see that they all worked
-- Registered and logged in
-- Clicked on the products page to view the different products
-- Clicked on the blog page and navigated around it, clicked on the posts and the comment section
-- Clicked on the ptoducts, added a candle to the bag, purchased the candle.
+- Landed on the home page, clicked the Nav bar buttons to see that they all worked.
+- Registered and logged in. Recieved notification that an email was to be sent. Email recieved and returned validated.
+- Clicked on the products page to view the different products. Each product having its own seperate description, price and size where applicable. 
+- When clicking on a product and adding it to the bag, the user can continue shopping or checkout securely.
+- When checking out there is a summary as to what is in my bag. then if i want to pay click secure check out. complete the personal detail form and fill in the card details. The payment goes through.
+- Upon Checkout the user is requested to complete a user information form. on  payment the user recieves an email with a detailed description on the transaction.
+- Clicked on the blog page and navigated around it, clicked on the posts and the comment section.If i am logged in i can post or edit my post or delete it. if im not logged in the buttons to 
+    edit and delete are not visible to me.
+
+# Deployment
+
+## How to run this project locally
+
+To run this project on your own IDE follow the instructions below:
+
+Ensure you have the following tools: 
+- An IDE such as [Gitpod](https://gitpod.io/)
+
+The following **must be installed** on your machine:
+- [Python 3](https://www.python.org/downloads/)
+- [Git](https://github.com)
+
+- An account at [Heroku](https://dashboard.heroku.com/apps) and 
+- An account at [Stripe](https://stripe.com/gb) and 
+- An account with [AWS](https://aws.amazon.com/) are needed to complete this project
+
+### Instructions
+1. Save a copy of the github repository located at https://github.com/Lee-AnnC/True_Essence by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder.
+   If you have Git installed on your system, you can clone the repository with the following command.
+```
+git clone https://github.com/Lee-AnnC/True_Essence
+```
+
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
+
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment.
+
+Enter the command:
+```
+python -m .venv venv
+```  
+_NOTE: Your Python command may differ, such as python3 or py_
+
+4. Activate the .venv with the command:
+```
+.venv\Scripts\activate 
+```
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+
+4. If needed, Upgrade pip locally with
+```
+pip install --upgrade pip.
+```
+
+5. Install all required modules with the command 
+```
+pip -r requirements.txt.
+```
+
+6. In your local IDE create a file called `.flaskenv`.
+
+7. Inside the .flaskenv file, create a SECRET_KEY variable.
+
+8. You can now run the application with the command
+```
+python3 app.py
+```
+9. Remember to /load_categories to be able to see the product categories
+
+## Heroku Deployment
+
+To deploy True_Essence to heroku, take the following steps:
+
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+
+2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set your region to Europe.
+
+4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+5. Confirm the linking of the heroku app to the correct GitHub repository.Make sure this is your Repository name.
+
+6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+7. Set the following config vars:
+
+| Key | Value |
+ --- | ---
+SECRET_KEY | `<your_secret_key>`
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+DATABASE_URL
+EMAIL_HOST_PASS
+EMAIL_HOST_USER
+STRIPE_PUBLIC_KEY
+STRIPE_SECRET_KEY
+STRIPE_WH_SECRET
+USE_AWS
+
+8. In the heroku dashboard, click "Deploy".
+
+9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+
+10. The site is now successfully deployed.
