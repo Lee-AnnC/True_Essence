@@ -137,9 +137,9 @@ a.category-badge > span.badge:hover {
 }
 .contact-hero {
     background-color: #f1f1f1;
-    background: url('/media/contact2.jpg') no-repeat center center fixed;
-    background-size: 500px 300px;
-    height: calc(max(50vh, 200px));
+    background: url('/media/lavender_garden1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(45vh);
 }
     
 .header{

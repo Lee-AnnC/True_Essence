@@ -1,11 +1,11 @@
 <div align="center">
 <h1>True Essence </h1>
-<img src="https://ibb.co/n1BCMW6" height="300px" href="https://.herokuapp.com/" target="_blank" rel="noopener" alt="True Essence"
+<img src="https://i.ibb.co/3Mvxtp2/about-us1.jpg"  href="https://.herokuapp.com/" target="_blank" rel="noopener" alt="True Essence"
     aria-label="True Essence" /><br>
 </div> 
 <br>
 
-[Ture Essence](https://.herokuapp.com) was created by Lee-Ann Clark.
+[True Essence](https://.herokuapp.com) was created by Lee-Ann Clark.
 A beautiful site that takes one back to nature and its True Essence.
 
 In today's fast paced world filled with man-made medications, there has been a shift, where people are coming back to nature and what she can provide for us.
@@ -13,6 +13,18 @@ In the way of medications for all sorts of ailments from headaches to more deepe
 for all the natural ingredients from oils to soaps to ways of easings ones mind.
 
 This is how True Essence was born.
+
+## HOW TO USE
+This project requires STRIPE payments and USER AUTHENTICATION 
+
+### Card Payments
+- credit card number and details 4242 4242 4242 4242 04/25 123 12345 
+- this can be used when making a purchase in the online store.
+
+### Standard User
+- To register you will need to confirm your email address.
+- Register and login to be able to load a blog post yourself.
+- once logged in you will be able to see your previous purchases. If you have not yet purchased anything, go ahead and give it a try.
 
 ## Table of Contents
 1. [UX](#ux)
@@ -165,8 +177,8 @@ The following design choices were made with this in mind:
 
 ### Colours
 <div align="center">
-    <img src="https://i.ibb.co/n6pz6hJ/True-Essence-Colors.png" alt=True Essence Palette aria-label=True Essence Colors </div>
-
+    <img src="https://i.ibb.co/R289T81/True-Essence-Colors.png" alt=True Essence Palette aria-label=True Essence Colors </div>
+<br>
 - The home page is crisp in white header and with yellow lemons and green leaves.
 - The navbar background is kept white all the way through, with a soft lavender as the page overlay for all other pages
 - The product cards have clear white background with black writing on them which show up nicely on the lavender overlay.
@@ -201,22 +213,22 @@ The following design choices were made with this in mind:
     - The navigation bar features the True Essence logo in the top left corner.
 
     - For visitors to the site who are not logged in, list items links are available for them to use.
-        1. Home (The logo itself)
-        2. Products (drop down menu of products)
-        3. Blog Posts(Read Only)
-        4. Log In
-        5. Register 
-        6. Shopping Bag
+    1. Home (The logo itself)
+    2. Products (drop down menu of products)
+    3. Blog Posts(Read Only)
+    4. Log In
+    5. Register 
+    6. Shopping Bag
 
     - For users who are logged in, the list items are as follows: 
-        1. Home (The logo itself)
-        2. Products (drop down menu of products)
-        3. Blog Posts
-        4. Add New Blog
-        5. Shopping Bag
-        6. Product Management
-        7. Profile page
-        8. Log Out
+    1. Home (The logo itself)
+    2. Products (drop down menu of products)
+    3. Blog Posts
+    4. Add New Blog
+    5. Shopping Bag
+    6. Product Management
+    7. Profile page
+    8. Log Out
     
 - Python determines if the user is logged in or not by checking `if 'user' in session` and passes this data to Jinja to display the correct welcome message on the profile page to the user.
 - The navbar is collapsed into a burger icon on small and medium screens, so that menu items do not start overlapping content or headings. 
@@ -261,3 +273,53 @@ The following design choices were made with this in mind:
 - This dropdown list is found in the navbar. It is a dropdown list of all Blog Posts under the Our Blog nav.At the top is `All`, then `Gardening`, `Medical`, `Recipes`, and `Add Post`. 
 - Each selection takes you to the blog post page of all posts added in that category.
 
+### Log In Page
+<div align="center">
+<img src="https://i.ibb.co/V9HVTKv/Sign-in.png" alt="True Essence Login Page page on all major screen sizes" >
+</div>
+<br>
+
+- The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
+  The user once logged in will receive a welcome message and be directed to their profile page. 
+- The profile page a page for that specific user. All the previous purchases that this user has ever purchased will be on this page. This page is unique to the user.
+- The user then has the option to add, edit or delete blog posts. These buttons will appear only on the session users profile page on the blog post. The user will not be able to edit or delete blog posts that were not added by the user themselves.
+- If the user does not have a username or password the user is directed to the register page.
+
+### Register Page
+- The Register page is also a simple **form** where by the user has to choose a username and password.
+ - Once the user name and password have been entered and are not duplicates of what is already there, the site will direct you to your blank profile page. Now you are ready to start adding blogs and purchasing products.
+
+ ### Add Post Page
+<div align="center">
+<img src="https://i.ibb.co/rt1bFNc/Add-Post.png" alt="True Essence Add Blog Page page on all major screen sizes" >
+</div>
+<br>
+
+- This can only be accessed if you are logged in as a user.
+- The Add Post page is a **form** that gives the user the selection of which category they want the post to show in. 
+- The user then can select an image and add it to the body box where the post will appear. The Post can be edited and made to appear as any normal post.
+- Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
+- Limits are placed on both min and max lengths of input accepted.
+
+### Editing Post Page
+- Once a new post has been added and the user wants to edit his /her post, they can log in to their profile page and on their post will be 2 buttons.  One for `Edit` and the other for `Delete`. 
+- The edit button allows the user to edit the post and then at the bottom of the post will be an update button. The user can then update once the editing is complete.
+- Upon successful completion a message will state that the post has been successfully updated. 
+
+### Delete Post
+- Should the user decide that they want to **DELETE** the post and they click on delete button, a page will appear with a message asking if the user is sure that want to delete this? if the user clicks on the "Delete" button below the post will be deleted. 
+- This page is a safety net to ensure the user doesn't remove all the information they entered.
+- Users have to be logged in to be able to a delete posts.
+
+### Log Out Page
+- The logout page allows users to end their session.
+- It provides a way for users to prevent others from updating their posts or using their information..
+
+### 404 Page
+- This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
+- The message is " Sorry, The page you are looking for cannot be found."
+
+### 500 Page
+- This page is very similar to the 404 page and has a message of " Sorry, An error has occurred. We've let our techs know and hope to fix it soon."
+
+ 

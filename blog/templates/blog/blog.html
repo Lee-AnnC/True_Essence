@@ -91,12 +91,17 @@
 {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
-        var maxHeight = 200;
-        $(".card-img-top").each(function() {
-            if ($(this).height() > maxHeight) {
-                maxHeight = $(this).height();
-            }
+        $(document).ready(function(){
+            fixHeights();
         });
-        $(".card-img-top").height(maxHeight);
+        function fixHeights() {
+            var maxHeight = 0;
+            $(".card-img-top").each(function () {
+                if ($(this).height() > maxHeight) {
+                    maxHeight = $(this).height();
+                }
+            });
+            $(".card-img-top").height(maxHeight);
+        }
     </script>
 {% endblock %}

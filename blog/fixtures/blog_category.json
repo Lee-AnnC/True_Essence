@@ -1,1 +1,1 @@
-[{"model": "blog.category", "pk": 1, "fields": {"name": "Gardening"}}, {"model": "blog.category", "pk": 2, "fields": {"name": "Medicinal Properties"}}, {"model": "blog.category", "pk": 3, "fields": {"name": "Recipes"}}]
+[{"model": "blog.category", "pk": 1, "fields": {"name": "Gardening"}}, {"model": "blog.category", "pk": 2, "fields": {"name": "Medical"}}, {"model": "blog.category", "pk": 3, "fields": {"name": "Recipes"}}]
