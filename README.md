@@ -290,11 +290,6 @@ The following design choices were made with this in mind:
  - Once the user name and password have been entered and are not duplicates of what is already there, the site will direct you to your blank profile page. Now you are ready to start adding blogs and purchasing products.
 
  ### Add Post Page
-<div align="center">
-<img src="https://i.ibb.co/rt1bFNc/Add-Post.png" alt="True Essence Add Blog Page page on all major screen sizes" >
-</div>
-<br>
-
 - This can only be accessed if you are logged in as a user.
 - The Add Post page is a **form** that gives the user the selection of which category they want the post to show in. 
 - The user then can select an image and add it to the body box where the post will appear. The Post can be edited and made to appear as any normal post.
@@ -316,10 +311,90 @@ The following design choices were made with this in mind:
 - It provides a way for users to prevent others from updating their posts or using their information..
 
 ### 404 Page
+<div align="center">
+<img src="https://i.ibb.co/c25f3Cr/404.png" alt="True Essence 404 Page page on all major screen sizes" >
+</div>
+<br>
 - This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
 - The message is " Sorry, The page you are looking for cannot be found."
 
 ### 500 Page
 - This page is very similar to the 404 page and has a message of " Sorry, An error has occurred. We've let our techs know and hope to fix it soon."
 
+## Features Left to Implement
+The Features Left To Implement is a section that will grow in time as the site itself grows.
  
+ # Information Architecture
+ - The blog model, the comments model and the contact model were created to add to the basic structure of the project.
+ - The blog model allows the user to use the full CRUD operations. Once logged in they can create their own blog, edit and delete the blog and read their own and other blogs as well.
+ - Having a blog section then needs to have a comments section as well. Poeple like to let you know what they are thinking.
+ - The comments section appears under each blog and the user can then leave a comment on the blog they have read.
+ - The contact model is a smaller model that allows the user to get in contact with True Essence via email and recieve a responce in turn.
+
+### Database Choice
+
+As this website is a student project and where I am in the course i had the opportunity to use db.sqlite3 in conjunction with gitpod.
+Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
+
+### Data Storage Types
+
+The types of data stored for my project are:
+- ObjectId
+- String
+- Boolean
+- Object
+
+### CRUD
+
+- CRUD was used in the development of this site. Create, Read, Update and Delete. The following sections used CRUD.
+
+## Blog  Categories
+- The  categories are used to organize blogs by common types. They are hard wired to be Medical, Gardening and Recipes.
+    - **Create** Blog Posts are added when accessing the /Add-Post only if the user is logged in.
+    - **Read** The Blog Post categories are shown as a drop down when adding a blog.
+    - **Update**  Categories cannot be updated at this point in time
+    - **Delete** Categories cannot be deleted at this point in time
+
+### Users
+- The USERS collection helps tie blogs to users of the website and to manage access to certain functionalities on the site.
+    - **Create** User Id's are created when the user registers for the first time. The user can then return with their login data.
+    - **Read** Users are displayed on the profile page and used in determining if a user can add, update or delete blog posts.
+    - **Update** User records are updated each time they make a purchase.  
+    - **Delete** users are not deleted at this time.
+
+### Blog Posts
+- The Blog Post collection stores data on all Blogs entered.
+    - **Create** New Blogs can be added by many new users that are logged in, to the Blog list.
+    - **Read**  The Blogs can be read by many users but not changed in any way unless the user is the session user.
+    - **Update**  Blog Posts can only be updated if the user is the session user and has added that perticular blog.
+    - **Delete**  Blog Posts can only be deleted if the user is the session user and has added that perticular blog themselves.
+
+## ERD 
+- This is a Entity Relationship Diagram of how the database collections interact.
+[ERD](https://i.ibb.co/4pL5CY4/ERD.png)
+<br>
+
+# Technologies Used
+
+### Tools
+- [Gitpod](https://www.gitpod.io//) is the IDE used for developing this project. 
+- [Imgbb](https://imgbb.com) to store all external images for this project.
+- [Git](https://git-scm.com/) to handle version control.
+- [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Browserstack](https://www.browserstack.com/) to test functionality on all browsers and devices.
+- [Techsini](http://techsini.com/) to create the images in this readme file of each page displayed on different screen sizes.
+
+### Libraries
+- [CSS3](https://www.w3schools.com/w3css/default.asp) - used to style DOM appearance. 
+- [HTML5](https://www.w3schools.com/html/default.asp) -  used to define DOM elements. 
+- [JQuery](https://jquery.com) - used to initialize handlers for user interactive elements such as Bootstrap framework pieces like: check boxes, date pickers, menu toggles.
+- [JavaScript](https://www.javascript.com/)  -  used to help handle challenge member entry.
+- [Python](https://www.python.org/) the project back-end functions are written using Python. Django and Python is used to build route functions.
+- [Django](https://docs.djangoproject.com/en/3.0/) Object Relational Mapper, HTML templating, URL routing, Form validation, Authentication, Admin and Security, does a lot of the heavy lifting for a website without much developer input 
+- [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown
+[Back To Table of Contents](#table-of-contents)
+
+# Defensive Programming
+- To prevent everyone from adding posts and being able to delet at will this code was added.
+  @method_decorator(login_required, name='dispatch')
+- By using this it means that the user has to be logged in to be able to post or edit or delete a post that they have created.
