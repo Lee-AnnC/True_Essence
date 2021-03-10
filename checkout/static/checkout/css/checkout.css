@@ -65,6 +65,6 @@ select option[value=""] {
     height: 100%;
 }
 
-   .StripeElement {
+.StripeElement {
         font-size: 11px;
     }

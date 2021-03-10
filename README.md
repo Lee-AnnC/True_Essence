@@ -194,15 +194,13 @@ The following design choices were made with this in mind:
     - Some subtle **shadows** have been added to the nav bar dropdown menu's. Links have been underlined. All this gives a positive user experience.
 
 ## Wireframes
-- [Home Page]()
-- [About Page]()
-- [Product Dropdown Page]()
-- [Blog Page]()
-- [Login Page]()
-- [Register Page]()
-- [Register-mobile]()
-- [Add Blog Page]()
-- [Add Comments Page]()
+- [Home Page](https://share.balsamiq.com/c/xiVDhooqR3LYUWTqw3Dzm2.png)
+- [About Page](https://share.balsamiq.com/c/pygzqN9TQbkoyQgJpBLFtv.png)
+- [Product Dropdown Page](https://share.balsamiq.com/c/gdSMSR97bJzp9NYYQNhU55.png)
+- [Blog Page](https://share.balsamiq.com/c/janNSJ7VVkZbnJESHL611T.png)
+- [Blog Page mobile](https://share.balsamiq.com/c/pMDSn8U2hom6Vk86kLWqpP.png)
+- [Login Page](https://share.balsamiq.com/c/6rbmvPZYXBjk2fz13CBoCQ.png)
+- [Register Page](https://share.balsamiq.com/c/7XeodstNwnijxVnMkpVkvj.png)
 
 # Features
  
@@ -398,3 +396,33 @@ The types of data stored for my project are:
 - To prevent everyone from adding posts and being able to delet at will this code was added.
   @method_decorator(login_required, name='dispatch')
 - By using this it means that the user has to be logged in to be able to post or edit or delete a post that they have created.
+
+## Testing
+
+### Validation Testing
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) 
+- [HTML Validator](https://validator.w3.org/)
+
+### Automated Testing
+- [Lighthouse Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftrue-essence.herokuapp.com)
+
+### Manual Testing
+- Tested accross mobile devices and web browsers.
+- Web Browsers - 
+    - [Opera](https://i.ibb.co/SBtyqC9/opera.png)
+    - [Firefox](https://i.ibb.co/sFYT7dj/firefox.png)
+    - [Micro Edge](https://i.ibb.co/xsrvq3m/edge.png) 
+    - [Windows 10](https://i.ibb.co/BzrB7Y4/windows-10.png)
+
+- Mobile phones/tablets - 
+    - [Samsung S4](https://i.ibb.co/Wy3h9PH/samsung-S4.png) 
+    - [IPhone 7](https://i.ibb.co/KKZ3vmS/Iphone-7.png) 
+    - [Google Phone](https://i.ibb.co/Lx3Bhkt/google-phone.png)
+    - [Galexy Tablet](https://i.ibb.co/2KQQ918/galaxy-tablet.png) 
+    - [Xiaomie](https://i.ibb.co/K6hNhhS/xiaomi.png)
+
+- Landed on the home page, clicked the Nav bar buttons to see that they all worked
+- Registered and logged in
+- Clicked on the products page to view the different products
+- Clicked on the blog page and navigated around it, clicked on the posts and the comment section
+- Clicked on the ptoducts, added a candle to the bag, purchased the candle.
