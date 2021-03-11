@@ -463,7 +463,38 @@ The types of data stored for my project are:
 
 ### Outstanding Defects
     1. On small devices STRIPE CC number overruns into the  date/month field. This field is made by stripe and is very tricky to adjust. The tutors also could not fix it.
+    [Number Overflow](https://i.ibb.co/jysvJ9D/number-overflow.png)
     2.
+
+# Credits
+
+## Content
+
+- The text, images, links and other data in the database was sourced from various websites including but not limited to
+
+## Media
+
+### Images
+
+- The photograph for the hero image was sourced from []()
+
+- Where possible the links to the images for the products and blogs were taken directly from the source image url. 
+
+- On occasion when this did not work the image was copied to my local machine and then uploaded to my [imgBB](https://leec.imgbb.com/) account, where I took the link from instead.
+
+## Code
+
+- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heaverly modified to suit the site needs.There were 3 additional models added.
+
+- Template code for cards in the blogs and products were taken from [Bootstrap](https://getbootstrap.com/) and modified to suit the sites needs.
+
+- Code to help build a blog and its attachments, add, edit, delete and comments were taken from Codemy.com [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
+
+- Code for buttons taken from [Bootstrap](https://getbootstrap.com/).
+
+- Code for the grid was taken from [Bootstrap](https://getbootstrap.com/)
+
+- Code for adding the correct prefixes to css was created using [AutoPrefixer](https://autoprefixer.github.io/).
 
 
 # Deployment

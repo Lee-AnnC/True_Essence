@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from . import views
 
 # Create your views here.
 
@@ -11,8 +10,8 @@ def index(request):
 
 
 def http404(request, exception):
-    return render(request, 'views.http404')
+    return render(request, 'home/404.html')
 
 
 def http500(request):
-    return render(request, 'views.http500')
+    return render(request, 'home/500.html')
