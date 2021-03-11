@@ -92,10 +92,10 @@
     <script type="text/javascript">
         $('.toast').toast('show');
         $(document).ready(function(){
-            fixHeights();
+            setTimeout(fixHeights, 300);
         });
         function fixHeights() {
-            var maxHeight = 0;
+            var maxHeight = 200;
             $(".card-img-top").each(function () {
                 if ($(this).height() > maxHeight) {
                     maxHeight = $(this).height();
