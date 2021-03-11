@@ -11,8 +11,8 @@ def index(request):
 
 
 def http404(request, exception):
-    return render(request, views.http404)
+    return render(request, 'views.http404')
 
 
 def http500(request):
-    return render(request, views.http500)
+    return render(request, 'views.http500')
