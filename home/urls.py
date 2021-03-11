@@ -7,8 +7,6 @@ urlpatterns = [
     path('', views.index, name="home")
 ]
 
-if settings.DEBUG:
-    urlpatterns = [
-        path("404", views.http404),
-        path("500", views.http500),
-    ] + urlpatterns
+handler404 = views.http404
+handler500 = views.http500
+

@@ -98,6 +98,8 @@ User goals are:
 - To be able to contact the company should you have feedback or a concern.
 - To be able to shop online safely
 - To be able to have itms delivered at a nominal fee or free dependant on the sum spent.
+- To have a place where a blog can be found filled with information.
+- To cbe able to add comments
 
 Some extra goals users might have:
 
@@ -112,7 +114,9 @@ True Essence meets these user needs in that:
 - Our new blog is filled with tips and help and recipies on all things "Essential".
 - This is wonderful in that there are always new and improved ideas to try and recipes to inspire all.
 - Our online store is safe and uses a progrm that protects your data, so you can shop with confidence.
-- With every new order the delivery amount is adjusted depending on the sale amount. Meaning delivery could be free. 
+- With every new order the delivery amount is adjusted depending on the sale amount. Meaning delivery could be free.
+- We now have a weekly blog that is filled with information on gardening, medical and recipes.
+- The user can add comments to the blogs, this helps us to know what the user wants in the next blog. 
 
 ### Business Goals
 
@@ -177,8 +181,10 @@ The following design choices were made with this in mind:
 
 ### Colours
 <div align="center">
-    <img src="https://i.ibb.co/R289T81/True-Essence-Colors.png" alt=True Essence Palette aria-label=True Essence Colors </div>
+    <img src="https://i.ibb.co/R289T81/True-Essence-Colors.png"> alt="True Essence Palette" aria-label="True Essence Colors" 
 <br>
+</div>
+
 - The home page is crisp in white header and with yellow lemons and green leaves.
 - The navbar background is kept white all the way through, with a soft lavender as the page overlay for all other pages
 - The product cards have clear white background with black writing on them which show up nicely on the lavender overlay.
@@ -199,11 +205,18 @@ The following design choices were made with this in mind:
 - [Product Dropdown Page](https://share.balsamiq.com/c/gdSMSR97bJzp9NYYQNhU55.png)
 - [Blog Page](https://share.balsamiq.com/c/janNSJ7VVkZbnJESHL611T.png)
 - [Blog Page mobile](https://share.balsamiq.com/c/pMDSn8U2hom6Vk86kLWqpP.png)
+- [Add Blog](https://i.ibb.co/JnW9qH4/add-blog.png)
+- [Edit Blog](https://i.ibb.co/HDmDqxw/Edit-Blog.png)
+- [Delete Blog](https://i.ibb.co/ZJrSWJg/Delete-Blog.png)
 - [Login Page](https://share.balsamiq.com/c/6rbmvPZYXBjk2fz13CBoCQ.png)
 - [Register Page](https://share.balsamiq.com/c/7XeodstNwnijxVnMkpVkvj.png)
 
 # Features
  
+## Custom JavaScript
+- In the blog section the main imagry was not the same height. By customising the js of the page, it made things look nicer. 
+- By defining js on the blog.html page using the class selector for those images, it improves the user experience.
+
 ## Existing Features
 
 ### Elements on every page
@@ -320,7 +333,14 @@ The following design choices were made with this in mind:
 - This page is very similar to the 404 page and has a message of " Sorry, An error has occurred. We've let our techs know and hope to fix it soon."
 
 ## Features Left to Implement
-The Features Left To Implement is a section that will grow in time as the site itself grows.
+ - The Features Left To Implement is a section that will grow in time as the site itself grows.
+
+- Workflow for comments so admin can approve and edit them before they are public
+- restrict ability to edit/delete posts to users that created them
+- update logged in user ability to manage own posts and own comments
+- update admin user ability to manage all posts and comments
+- update search on blog page for keywords in blogs not products
+- allow users to like or unlike blog posts
  
  # Information Architecture
  - The blog model, the comments model and the contact model were created to add to the basic structure of the project.
@@ -404,7 +424,7 @@ The types of data stored for my project are:
 - [HTML Validator](https://validator.w3.org/)
 
 ### Automated Testing
-- [Lighthouse Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftrue-essence.herokuapp.com)
+- [Lighthouse Report](https://i.ibb.co/QrPcDw1/lighthouses-report.png)
 
 ### Manual Testing
 - [browserstack](https://live.browserstack.com/)
@@ -428,9 +448,14 @@ The types of data stored for my project are:
 - Clicked on the products page to view the different products. Each product having its own seperate description, price and size where applicable. 
 - When clicking on a product and adding it to the bag, the user can continue shopping or checkout securely.
 - When checking out there is a summary as to what is in my bag. then if i want to pay click secure check out. complete the personal detail form and fill in the card details. The payment goes through.
-- Upon Checkout the user is requested to complete a user information form. on  payment the user recieves an email with a detailed description on the transaction.
+- Upon Checkout the user is requested to complete a user information form. on payment the user recieves an email with a detailed description on the transaction.
 - Clicked on the blog page and navigated around it, clicked on the posts and the comment section.If i am logged in i can post or edit my post or delete it. if im not logged in the buttons to 
     edit and delete are not visible to me.
+
+### Defect Tracking
+    1. When moving images from gitpod to Heroku there were a few that just didnt want to show. Had to physically load them seperatly. there was still one that just refused, so it was deleted, then the problem was solved.
+    2. There was a massive spacing above all the headings on all the pages, i have to adjust the media query 768px and remove the 
+
 
 # Deployment
 
@@ -455,7 +480,6 @@ The following **must be installed** on your machine:
 ```
 git clone https://github.com/Lee-AnnC/True_Essence
 ```
-
 2. If possible open a terminal session in the unzip folder or cd to the correct location.
 
 3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment.
@@ -476,12 +500,10 @@ _Again this **command may differ depending on your operating system**, please ch
 ```
 pip install --upgrade pip.
 ```
-
 5. Install all required modules with the command 
 ```
 pip -r requirements.txt.
 ```
-
 6. In your local IDE create a file called `.flaskenv`.
 
 7. Inside the .flaskenv file, create a SECRET_KEY variable.
@@ -490,7 +512,9 @@ pip -r requirements.txt.
 ```
 python3 app.py
 ```
-9. Remember to /load_categories to be able to see the product categories
+9. Remember to make migrations once and everytime changes are made to the main model.
+
+ 10. Remember to /loaddata categories first then loaddata products to be able to see the product categories
 
 ## Heroku Deployment
 
@@ -524,6 +548,7 @@ STRIPE_PUBLIC_KEY
 STRIPE_SECRET_KEY
 STRIPE_WH_SECRET
 USE_AWS
+DISABLE_COLLECTSTATIC 1
 
 8. In the heroku dashboard, click "Deploy".
 

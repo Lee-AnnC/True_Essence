@@ -14,6 +14,7 @@
                 Online Shop
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="candle-link">
+                <a href="{% url 'products' %}" class="dropdown-item">All</a>
                 <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
                 <a href="{% url 'products' %}?category=soaps" class="dropdown-item">Soaps</a>
                 <a href="{% url 'products' %}?category=diffusers" class="dropdown-item">Diffusers</a>
