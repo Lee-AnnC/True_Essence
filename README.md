@@ -454,7 +454,16 @@ The types of data stored for my project are:
 
 ### Defect Tracking
     1. When moving images from gitpod to Heroku there were a few that just didnt want to show. Had to physically load them seperatly. there was still one that just refused, so it was deleted, then the problem was solved.
-    2. There was a massive spacing above all the headings on all the pages, i have to adjust the media query 768px and remove the 
+    2. There was a massive spacing above all the headings on all the pages, I have to adjust the media query 768px and remove the contact form in the css.
+    3. There was an issue with the blog pages and their height and the images not showing on heroku. Had to disable colstatic-1 and tried again.The had to change the /media/ to {{MEDIA_URL}} to get the images to show. Managed to get all 3 images showing finally.
+    4. Then trying to link the blogs to the blog category page. Took out spacings in names_names and then things started wotking better.
+    5. Added Custom Js to sort out the height issue with the blogs, they all appear correct now.
+    6. Struggled with the contact us image. The image i had chosen was a low quality so when amplified looked terrible. Had to ditch the image and search for a better quality, ended up using the image for the other pages.
+    7. Battled getting the 404 and 500 pages to show. Changed the handler and moved the urls to the main project url. then got it working.
+
+### Outstanding Defects
+    1. On small devices STRIPE CC number overruns into the  date/month field. This field is made by stripe and is very tricky to adjust. The tutors also could not fix it.
+    2.
 
 
 # Deployment

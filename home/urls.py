@@ -9,4 +9,3 @@ urlpatterns = [
 
 handler404 = views.http404
 handler500 = views.http500
-
