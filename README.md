@@ -181,7 +181,7 @@ The following design choices were made with this in mind:
 
 ### Colours
 <div align="center">
-    <img src="https://i.ibb.co/R289T81/True-Essence-Colors.png"> alt="True Essence Palette" aria-label="True Essence Colors" 
+    <img src="https://i.ibb.co/R289T81/True-Essence-Colors.png" alt="True Essence Palette" aria-label="True Essence Colors">
 <br>
 </div>
 
@@ -221,9 +221,9 @@ The following design choices were made with this in mind:
 
 ### Elements on every page
 - Navbar
-    - The navigation bar features the True Essence logo in the top left corner.
+- The navigation bar features the True Essence logo in the top left corner.
 
-    - For visitors to the site who are not logged in, list items links are available for them to use.
+- For visitors to the site who are not logged in, list items links are available for them to use.
     1. Home (The logo itself)
     2. Products (drop down menu of products)
     3. Blog Posts(Read Only)
@@ -231,7 +231,7 @@ The following design choices were made with this in mind:
     5. Register 
     6. Shopping Bag
 
-    - For users who are logged in, the list items are as follows: 
+- For users who are logged in, the list items are as follows: 
     1. Home (The logo itself)
     2. Products (drop down menu of products)
     3. Blog Posts
@@ -466,37 +466,6 @@ The types of data stored for my project are:
     [Number Overflow](https://i.ibb.co/jysvJ9D/number-overflow.png)
     2.
 
-# Credits
-
-## Content
-
-- The text, images, links and other data in the database was sourced from various websites including but not limited to
-
-## Media
-
-### Images
-
-- The photograph for the hero image was sourced from []()
-
-- Where possible the links to the images for the products and blogs were taken directly from the source image url. 
-
-- On occasion when this did not work the image was copied to my local machine and then uploaded to my [imgBB](https://leec.imgbb.com/) account, where I took the link from instead.
-
-## Code
-
-- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heaverly modified to suit the site needs.There were 3 additional models added.
-
-- Template code for cards in the blogs and products were taken from [Bootstrap](https://getbootstrap.com/) and modified to suit the sites needs.
-
-- Code to help build a blog and its attachments, add, edit, delete and comments were taken from Codemy.com [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
-
-- Code for buttons taken from [Bootstrap](https://getbootstrap.com/).
-
-- Code for the grid was taken from [Bootstrap](https://getbootstrap.com/)
-
-- Code for adding the correct prefixes to css was created using [AutoPrefixer](https://autoprefixer.github.io/).
-
-
 # Deployment
 
 ## How to run this project locally
@@ -595,3 +564,105 @@ DISABLE_COLLECTSTATIC 1
 9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
 10. The site is now successfully deployed.
+
+# Credits
+
+## Content
+
+- The text, images, links and other data in the database was sourced from various websites including but not limited to
+
+- About_Us image[About](https://www.timeout.com/london/things-to-do/lavender-fields-in-and-around-london)
+- Steam Distillling[Distilling Video](https://www.youtube.com/watch?v=fBtuUUTbTyw)
+
+## Media
+
+### Images
+
+- The photograph for the hero image was sourced from [womansworld](https://www.womansworld.com/posts/mental-health/essential-oils-for-anxiety)
+
+- Where possible the links to the images for the products and blogs were taken directly from the source image url. 
+
+- On occasion when this did not work the image was copied to my local machine and then uploaded to my [imgBB](https://leec.imgbb.com/) account, where I took the link from instead.
+
+- Candles
+    [Rose](https://www.therosetree.co.uk/blogs/news/aromatherapy-candles-the-ultimate-guide)
+    [Lavender](http://fleurfragrances.com/corporate-gifting/)
+    [White Lilly](https://wallpapermemory.com/218794)
+
+- Soaps  
+    [Lavender](https://br.pinterest.com/marytelma007/sabonete-artesanal/)
+    [Rosemary](https://lovelygreens.com/tag/rosemary/)
+    [Rose Geranium](https://br.pinterest.com/pin/313422455323721599/)
+    [Lemongrass](https://za.pinterest.com/pin/499407046169774646/)
+    [Cinnamon](https://www.pinterest.co.uk/pin/292171094574609867/)
+
+- Diffusers
+    [Black Fluted](https://browndanielgroup.com/a-beginners-guide-to-essential-oils/)
+    [Wooden Fluted](https://bevividyou.com/blogs/vivid-blog/7-reasons-for-home-essential-oil-diffuser)
+    [Clear Reed](https://www.ebay.com/c/13036419732)
+    [Colored Reed](https://www.indiamart.com/lhasa-aroma/)
+    [Two Tone](https://www.contemporist.com/modern-ways-to-introduce-aromatherapy-into-your-home-and-life/)
+    [Ceramic](https://www.ecvv.com/product/4064601.html)
+
+- Oils 
+    [Citrus](https://www.pinterest.pt/pin/575546027370540982/)
+    [Peppermint](https://www.craftovator.co.uk/essential-oils/peppermint-mentha-piperita-essential-oil/)
+    [Geranium](http://soiltosoul.asia/product/geranium-oil/)
+    [Elemi](https://www.aosproduct.com/ESSENTIAL-OILS/Elemi-Oil)
+    [Sandlewood](https://meesho.com/blog/sandalwood-face-pack-benefits)
+    [Bergamot](https://www.dreamstime.com/bergamot-essential-oil-bergamot-fruit-isolated-white-background-bergamot-essential-oil-bergamot-fruit-image196691210)
+    
+- New Arrivals
+    [3 pack](https://www.pinterest.fr/pin/501940320966370476/)
+    [Remote Control](https://www.amazon.co.uk/household-products-Multi-functional-essential-aromatherapy/dp/B07YQTS9YD)
+    [Scented Candles](https://ar.pinterest.com/pin/317503842453953377/)
+    [Aromatherapy Gift Basket](https://www.pinkeepromise.com/Essential-Oil-Gift-Basket-Young-Living)
+    
+- Special Occassions
+    [Lavender gift basket](https://www.leisureopportunities.co.uk/news/Body-Bliss-launches-new-aromatherapy-app-for-customisable-spa-treatments/308027
+    [Candle Gift Basket](https://kelownacandlefactory.com/product/medium-gift-basket/)
+    
+
+- Blog Images
+    [Main Blog Image](https://za.pinterest.com/pin/626070785674471920/)
+
+- Blog Category Images
+    [Gardening](https://za.pinterest.com/pin/210050770100707234/)
+        Growing Lavender[Lavender](https://www.gardendesign.com/plants/lavender.html)
+        Growing Peppermint[Peppermint](https://www.masterclass.com/articles/mint-companion-planting-guide)
+
+    [Medical](https://howeessentials.com/)
+        [Mint](https://www.indiamart.com/proddetail/green-mint-leaf-23226784197.html)
+    
+    [Recipes](https://www.dreamstime.com/stock-photo-natural-soaps-spa-setting-flower-aromatherapy-image69369773)
+        Recipes Post [Natural Soap](https://lovelygreens.com/eco-friendly-cold-process-soap-recipe-instructions/)
+
+## Code
+
+- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heaverly modified to suit the site needs.There were 3 additional models added.
+
+- Template code for cards in the blogs and products were taken from [Bootstrap](https://getbootstrap.com/) and modified to suit the sites needs.
+
+- Code to help build a blog and its attachments, add, edit, delete and comments were taken from [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
+
+- Code for buttons taken from [Bootstrap](https://getbootstrap.com/).
+
+- Code for the grid was taken from [Bootstrap](https://getbootstrap.com/)
+
+- Code for adding the correct prefixes to css was created using [AutoPrefixer](https://autoprefixer.github.io/).
+
+- To dump and load data help was taken from [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata)
+
+- To sort out the blog imagry and heights advice was taken from [CSS-tricks](https://css-tricks.com/snippets/jquery/equalize-heights-of-divs/)
+
+- To make my add post more responsive help was taken from [Nolanbraman](https://www.nolanbraman.com/Resizing%20the%20Django-ckeditor%20To%20Make%20It%20Responsive/)
+
+## Acknowledgements
+
+Special thanks to my mentor **Aaron Sinnot** for his patience and help.
+
+Special thanks to **Malia Havlicek** who's patience and understanding has helped in many a dark day when things haven't gone to plan.
+For being my sounding board and an extra pair of eyes when i was just not seeing things.
+
+## Disclaimer
+This is a student project and hence the content of this website is educational purposes only.
