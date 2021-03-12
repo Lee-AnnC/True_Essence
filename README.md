@@ -399,12 +399,29 @@ The types of data stored for my project are:
 # Technologies Used
 
 ### Tools
-- [Gitpod](https://www.gitpod.io//) is the IDE used for developing this project. 
-- [Imgbb](https://imgbb.com) to store all external images for this project.
-- [Git](https://git-scm.com/) to handle version control.
+- [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project. 
+- [Django](https://www.djangoproject.com/) as python web framework for rapid development and clean design.
+- [Stripe](https://stripe.com) as payment platform to validate and accept credit card payments securely.
+- [AWS S3 Bucket](https://aws.amazon.com/) to store images entered into the database.
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
+- [Coverage](https://coverage.readthedocs.io/en/v4.5.x/) to measure code coverage of python unittests.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style django forms.
+- [Django Heroku](https://pypi.org/project/django-heroku/) to improve deployment of django projects on heroku.
+- [Django Storages](https://django-storages.readthedocs.io/en/latest/) a collection of custom storage backends with django to work with boto3 and AWS S3.
+- [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
+- [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+- [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
+- [Imgbb](https://imgbb.com) to store external images for this project that were not entered into the database.
+- [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
 - [GitHub](https://github.com/) to store and share all project code remotely. 
 - [Browserstack](https://www.browserstack.com/) to test functionality on all browsers and devices.
-- [Techsini](http://techsini.com/) to create the images in this readme file of each page displayed on different screen sizes.
+- Heroku for deployment
+- [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
+
+### Databases
+- [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
+- [SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
 
 ### Libraries
 - [CSS3](https://www.w3schools.com/w3css/default.asp) - used to style DOM appearance. 
@@ -414,6 +431,13 @@ The types of data stored for my project are:
 - [Python](https://www.python.org/) the project back-end functions are written using Python. Django and Python are used to build route functions.
 - [Django](https://docs.djangoproject.com/en/3.0/) Object Relational Mapper, HTML templating, URL routing, Form validation, Authentication, Admin and Security, does a lot of the heavy lifting for a website without much developer input 
 - [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown
+- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+
+### Languages
+- This project uses HTML, CSS, JavaScript and Python programming languages.
+
 [Back To Table of Contents](#table-of-contents)
 
 # Defensive Programming
@@ -527,58 +551,89 @@ pip install --upgrade pip.
 ```
 pip -r requirements.txt.
 ```
-7. In your local IDE create a file called settings.py.
+7. Set up the following environment variables within your IDE. 
 
-8. Inside the settings.py file, create a SECRET_KEY variable.
+        "HOSTNAME="<enter key here>",
+        "DEV": "1",
+        "SECRET_KEY": "<enter key here>",
+        "STRIPE_PUBLISHABLE": "<enter key here>",
+        "STRIPE_SECRET": "<enter key here>",
+        "EMAILJS_USER_ID": "<enter key here>",
+        "STRIPE_SUCCESS_URL": "<enter url here>",
+        "STRIPE_CANCEL_URL": "<enter url here>",
+        "AWS_ACCESS_KEY_ID": "<enter key here>",
+        "AWS_SECRET_ACCESS_KEY": "<enter key here>",
+        "AWS_STORAGE_BUCKET_NAME": "<enter bucket name here>",
 
-9. You can now run the application with the command
-```
-python3 app.py
-```
-10. Remember to make migrations, every time changes are made to the main model.
+- `DEV` environment variable is set only within the development environment, making it possible to have different settings for the two environments.
+For example setting DEBUG = True only when working in development, not on the deployed site.
 
- 11. Remember to /loaddata categories first then loaddata products to be able to see the product categories
+8. You need to restart your machine to activate your environment variables.
+
+9. Migrate the admin models to create your database template using the command
+    ```
+    python manage.py migrate
+    ```
+10. Create your superuser to access the django admin panel with the following command
+    ```
+    python manage.py createsuperuser
+    ```
+11. You can now run the program locally with the following command: 
+    ```
+    python manage.py runserver
+    ```
+12. Once the program is running, go to the local link,  add `/admin` to the end of the url. Here log in with your superuser you just created.
+
+13. Once these items exist in your database your local site will run as expected.
 
 ## Heroku Deployment
 
 To deploy True_Essence to Heroku, take the following steps:
 
-1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+1. Create a `requirements.txt` file using the command `pip freeze > requirements.txt`.
 
-2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+2. Create a `Procfile` with the command `echo web: python app.py > Procfile`.
 
-3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+3. `git add` and `git commit` the new requirements and Procfile then `git push` the project to GitHub.
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set your region to Europe.
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps). Give it a name, set the region that is applicable for your location.
 
-4. From the Heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+4. From the heroku dashboard of your new application, click on "Deploy" > "Deployment method" and select GitHub.
 
-5. Confirm the linking of the Heroku app to the correct GitHub repository. Make sure this is your Repository name.
+5. Confirm the linking to the correct GitHub repository.
 
-6. In the Heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+6. In the heroku dashboard click on "Settings" > "Reveal Config Vars".
 
 7. Set the following config vars:
 
 | Key | Value |
- --- | ---
-SECRET_KEY | `<your_secret_key>`
-AWS_ACCESS_KEY_ID | `<your_secret_key>`
-AWS_SECRET_ACCESS_KEY | `<your_secret_key>`
-ALLOWED_HOSTS| `<auto populated by heroku>`
-DATABASE_URL | `<auto populated by heroku>`
-EMAIL_HOST_PASS | `<your_secret_key>`
-EMAIL_HOST_USER | `<your_secret_key>`
-STRIPE_PUBLIC_KEY | `<your_secret_key>`
-STRIPE_SECRET_KEY | `<your_secret_key>`
-STRIPE_WH_SECRET | `<your_secret_key>`
-USE_AWS | True
-DISABLE_COLLECTSTATIC | 1
+--- | ---
+AWS_ACCESS_KEY_ID | `<your secret key>`
+AWS_SECRET_ACCESS_KEY | `<your secret key>`
+AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
+DATABASE_URL | `<your postgres database url>`
+EMAILJS_USER_ID | `<your secret key>`
+HOSTNAME | `<your heroku app hostname>`
+SECRET_KEY | `<your secret key>`
+STRIPE_CANCEL_URL | `<link to all-products page in your app>`
+STRIPE_PUBLISHABLE | `<your secret key>`
+STRIPE_SECRET | `<your secret key>`
+STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
-8. In the Heroku dashboard, click "Deploy".
+8. From the command line of your local IDE:
+    - Enter the heroku postres shell 
+    - Migrate the database models 
+    - Create your superuser account in your new database
+    
+     Instructions can be found in the [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
 
-9. In the "Manual Deployment" section of this page, make sure the master branch is selected and then click "Deploy Branch".
+9. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
 
-10. The site is now successfully deployed.
+10. Once the build is complete, click the "View" button provided.
+
+11. From the link provided add `/admin` to the end of the url, log in with your superuser account and create instances of ShippingDestination and Product within the new database.
+
+12. Once these items exist in your database your heroku site will run as expected.
 
 # Credits
 
