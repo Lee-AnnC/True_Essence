@@ -317,6 +317,10 @@ The following design choices were made with this in mind:
 - This page is a safety net to ensure the user doesn't remove all the information they entered.
 - Users have to be logged in to be able to delete posts.
 
+### Add Comment Page
+- The user can add a comment to any blog post.
+- Once the user has added a comment clickon the blog post and see the comment below that post.
+
 ### Log Out Page
 - The logout page allows users to end their session.
 - It provides a way for users to prevent others from updating their posts or using their information..
@@ -442,110 +446,23 @@ The types of data stored for my project are:
     - [Google Phone](https://i.ibb.co/Lx3Bhkt/google-phone.png)
     - [Galexy Tablet](https://i.ibb.co/2KQQ918/galaxy-tablet.png) 
     - [Xiaomie](https://i.ibb.co/K6hNhhS/xiaomi.png)
+    
 
-| Feature Tested                        | Steps Taken 
-
-| Navigation                            | Landed on the home page, clicked the Navbar buttons to see that they all worked.
-
-| User Registration                     | 1. Fill out registration form.
-                                        | 2. See notification about user is registered and validation email sent
-                                        | 3. Click validation link
-                                        | 4. Login
-                                        | 5. Verify navigation menus changed 
-
-| Products                              | Verify each products has
-                                        | 1. Image, name, price, category, rating
-                                        | 2. product cards in same row are same size
-
-| Product Detail & Add to Bag           | 1. Click each product's image from Products page to get to detail page 
-                                        | 2. Verify click the product image and view detail page to verify
-                                        |     a. image, name, price, category, rating, description
-                                        |     b. see quantity box that works
-                                        |     c. add 1 or 2 to bag then click keep shopping
-                                        | 3. Verify item is in bag layer with correct quanity.
-                                        | 4.  Click Keep Shopping Button.
-
-| Bag Functionality                     | Once products is in bag, verify info is correct:
-                                        | 1. Image
-                                        | 2. Name  
-                                        | 3. Quantity
-                                        | 4. Totals are good
-
-| Checkout - not logged in              | 1. add 2 usb diffusors to cart
-                                        | 2. verify bag info math is good
-                                        | 3. click secure checkout from bag layer 
-                                        | 4 verify math is good on bag page, no delivery charge
-                                        | 5. update quantity to 1, verify delivery charge is there in bag and page
-                                        | 6. close bag layer.
-                                        | 7. update to 2. Verify changes, close layer.
-                                        | 8. click secure checkout button
-                                        | 9. verify form is not filled out.
-                                        | 10. Click complete order without filling in data.
-                                        | 11. fill in name, click submit and repeat process so you check validation, on each required field.                                                  
-                                        | 12. submit order.
-                                        | 13. verify notifcation confirmation email matches what you entered.
-                                        | 14. verify confirmation # matches page, layer and email
-                                        | 15. verify math in email.
-        
-| Checkout - logged in,no past orders   | 1. add 1 lavendar candles to cart
-                                        | 2. verify bag info math is good
-                                        | 3. click secure checkout from bag layer
-                                        | 4. verify delivery charge 
-                                        | 5. verify form is not filled out.
-                                        | 6. Click login button & login
-                                        | 7. click bag and get back to checkout form page
-                                        | 8. verify email is filled out but no other info
-                                        | 9. fill out the form, make secure save button is checked, and click complete.
-                                        | 10. verify email, page and notification layer match 
-
-| Checkout Process, Logged In with Saved Info     
-                                        | 1. add 2 lavendar candles to cart
-                                        | 2. verify bag info math is good
-                                        | 3. click secure checkout from bag layer
-                                        | 4. verify no delivery charge
-                                        | 5. verify form is filled out except for full name and creditcard 
-                                        | 6. Click login button & login
-                                        | 7. click bag and get back to checkout form page.
-                                        | 8. verify email is filled out but no other info.
-                                        | 9. fill out the form, make secure save button is checked, and click complete
-                                        | 10.  verify email, page and notification layer match  
-
-| Blog Post Page                        | 1. Log out, click blogs all navigation
-                                        | 2. Verify imagery and posts are nice and you see 3 categories of posts ordered by oldest to newest.
-                                        | 3. click blogs gardening. Verify only gardening posts.
-                                        | 4. Click blogs medical, verify only medical posts
-                                        | 5. Click Blogs Recipes, verify only recipe blogs.
-                                        | 6. Click add Post, verify you are taken to login page.
-                                        | 7. Login, verify you are at an Add post form
-                    
-| Add Blog Post                         | 1. log in
-                                        | 2. Click "add a Post" from Our Blog in navigation 
-                                        | 3. Click POST Button
-                                        | 4. If validation error is hit, fill in that form element and then Click POST until form submits.
-                    
-| Edit Blog Post                        | 1. find the post you just created.
-                                        | 2. Edit it.
-                                        | 3. See that required fields are auto populated
-                                        | 4. Add a header image
-                                        | 5. See that the image is on the detail page now
-                                        | 6. Edit it again. 
-                                        | 7. Add in some fancy body stuff.
-                                        | 8. See how cool the editor is
-                                        | 9. Click the post button.
-                                        | 10.Validate the updates you made to the body carried over
-                            
-| Delete Blog Post                      | 1. Find the post you just updated.
-                                        | 2. Delete it
-                                        | 3. Verify it is truly not on the Our Blog All page.
-
-| Add A Comment to a Blog               | 1. Make sure you are logged out
-                                        | 2. Click on Growing Lavender Blog.
-                                        | 3. Click on an Add Comment Link.
-                                        | 4. Type in your comment
-                                        | 5. Click on the Growing Lavender Blog again.
-                                        | 6. See the latest comment!  
-
-
+| Feature Tested                                | Steps Taken                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Navigation                                    | 1. Land on home page<br>2. Click every navigation link and make sure you go where you should                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| User Registration                             | 1. Fill out registration form.<br>2. See notification about user is registered and validation email sent.<br>3. Click validation link<br>4. log in<br>5. Verify navigation menus changed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Products                                      | verify each products has<br>1. image, name, price, category, rating<br>2. product cards in same row are same size                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Product Detail & Add to Bag                   | 1. Click each product's image from Products page to get to detail page<br>2. verify click the product image and view detail page to verify<br>   a. image, name, price, category, rating, description<br>   b. see quantity box that works<br>   c. add 1 or 2 to bag then click keep shopping<br>3. Verify item is in bag layer with correct quanity.<br>4. Click Keep Shopping Button                                                                                                                                                                                                                                                                                                                                                               |
+| Bag Functionality                             | Once products is in bag, verify info is correct:<br>1. Image<br>2. Name<br>3. Quantity<br>4. Totals are good                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Checkout - not logged in                      | 1. add 2 usb diffusors to cart<br>2. verify bag info math is good<br>3. click secure checkout from bag layer<br>4 verify math is good on bag page, no delivery charge<br>5. update quantity to 1, verify delivery charge is there in bag and page.<br>6. close bag layer.<br>7. update to 2. Verify changes, close layer.<br>8. click secure checkout button.<br>9. verify form is not filled out.<br>10. Click complete order without filling in data. <br>11. fill in name, click submit and repeat process so you check validation<br>on each required field.<br>12. submit order.<br>13. verify notifcation confirmation email matches what you entered.<br>14. verify confirmation # matches page, layer and email.<br>15. verify math in email. |
+| Checkout - logged in<br>no past orders        | 1. add 1 lavendar candles to cart<br>2. verify bag info math is good<br>3. click secure checkout from bag layer<br>4. verify delivery charge<br>5. verify form is not filled out.<br>10. Click login button & login<br>11. click bag and get back to checkout form page.<br>12. verify email is filled out but no other info.<br>13. fill out the form, make secure save button is checked, and click complete.<br>14. verify email, page and notification layer match                                                                                                                                                                                                                                                                                |
+| Checkout Process<br>Logged In with Saved Info | 1. add 2 lavendar candles to cart<br>2. verify bag info math is good<br>3. click secure checkout from bag layer<br>4. verify no delivery charge<br>5. verify form is filled out except for full name and creditcard<br>10. Click login button & login<br>11. click bag and get back to checkout form page.<br>12. verify email is filled out but no other info.<br>13. fill out the form, make secure save button is checked, and click complete.<br>14. verify email, page and notification layer match                                                                                                                                                                                                                                              |
+| Blog Post Page                                | 1. Log out, click blogs all navigation<br>2. Verify imagery and posts are nice and you see 3 categories of posts ordered by<br>oldest to newest<br>3. click blogs gardening. Verify only gardening posts.<br>4. Click blogs medical, verify only medical posts.<br>5. Click Blogs Recipes, verify only recipe blogs.<br>6. Click add Post, verify you are taken to login page.<br>7. Login, verify you are at an Add post form                                                                                                                                                                                                                                                                                                                        |
+| Add Blog Post                                 | 1. log in<br>2. Click "add a Post" from Our Blog in navigation.<br>3. Click POST Button<br>4. If validation error is hit, fill in that form element and then Click POST until<br>form submits.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Edit Blog Post                                | 1. find the post you just created.<br>2. Edit it.<br>3. See that required fields are auto populated.<br>3. Add a header image.<br>4. See that the image is on the detail page now.<br>5. Edit it again. <br>6. Add in some fancy body stuff.<br>7. See how cool the editor is.<br>8. Click the post button. <br>9. Validate the updates you made to the body carried over.<br>                                                                                                                                                                                                                                                                                                                                                                        |
+| Delete Blog Post                              | 1. Find the post you just updated.<br>2. Delete it.<br>3. Verify it is truly not on the Our Blog All page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Add A Comment to a Blog                       | 1. Make sure you are logged out.<br>2. Click on Growing Lavender Blog.<br>3. Click on an Add Comment Link.<br>4. Type in your comment.<br>5. Click on the Growing Lavender Blog again.<br>6. See the latest comment!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 ### Defect Tracking
 > 1. When moving images from gitpod to Heroku there were a few that just didn't want to show. Had to physically load them separately. there was still one that just refused, so it was deleted,
 then the problem was solved.
