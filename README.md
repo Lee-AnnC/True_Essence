@@ -319,7 +319,7 @@ The following design choices were made with this in mind:
 
 ### Add Comment Page
 - The user can add a comment to any blog post.
-- Once the user has added a comment clickon the blog post and see the comment below that post.
+- Once the user has added a comment click on the blog post and see the comment below that post.
 
 ### Log Out Page
 - The logout page allows users to end their session.
@@ -355,7 +355,7 @@ The following design choices were made with this in mind:
 
 ### Database Choice
 
-As this website is a student project and where I am in the course I had the opportunity to use db.sqlite3 in conjunction with gitpod.
+As this website is a student project and where I am in the course I had the opportunity to use db.sqlite3 in conjunction with gitpod and Heroku.
 Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
 
 ### Data Storage Types
