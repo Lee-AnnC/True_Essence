@@ -166,7 +166,6 @@ body {
     font-size: 40px;
     text-align: center;
     margin-left: 0;
-
 }
 h1 {
     margin-top: 140px;
@@ -194,6 +193,11 @@ input[name='q']::placeholder {
 .post-body h2 {
     margin-top: 12px;
     padding-top: 0;
+}
+.blog-detail-img{
+    height:50vh!important;
+    max-width: 100%;
+    width: auto!important;
 }
 
 /** Footer **/

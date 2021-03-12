@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views.generic import View, DetailView, UpdateView, DeleteView, CreateView
 from .models import Post, Category, Comment
-from .forms import PostForm, EditForm, CommentForm
+from .forms import PostForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.contrib import messages
 
 # def blog(request):
 #    """ A view to return the blog page """
@@ -68,8 +69,20 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'update_post.html'
+    context_object_name = 'post'
     # fields = ['title', 'title_tag', 'body']
-
+    def form_valid(self, form):
+        # save the form
+        form.save()
+        post = get_object_or_404(Post, pk=self.kwargs['pk'])
+        if 'header_image' in self.request.FILES:
+            #update the image if it was changed
+            post.header_image = self.request.FILES['header_image']
+            post.save()
+        messages.success(self.request, 'Successfully updated blog!')
+        return redirect(reverse("article-detail", args=[self.kwargs['pk']]))
+    def get_success_url(self, **kwargs):
+        return redirect(reverse("article-detail", args=[self.kwargs['pk']]))
 
 @method_decorator(login_required, name='dispatch')
 class DeletePostView(DeleteView):

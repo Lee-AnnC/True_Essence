@@ -8,9 +8,9 @@
 [True Essence](https://.herokuapp.com) was created by Lee-Ann Clark.
 A beautiful site that takes one back to nature and its True Essence.
 
-In today's fast paced world filled with man-made medications, there has been a shift, where people are coming back to nature and what she can provide for us.
-In the way of medications for all sorts of ailments from headaches to more deeper seated problems. It is nice to be able to find a place that caters 
-for all the natural ingredients from oils to soaps to ways of easings ones mind.
+In today's fast-paced world filled with man-made medications, there has been a shift, where people are coming back to nature and what she can provide for us.
+In the way of medications for all sorts of ailments from headaches to more deeper-seated problems. It is nice to be able to find a place that caters 
+for all the natural ingredients from oils to soaps to ways of easings one's mind.
 
 This is how True Essence was born.
 
@@ -93,13 +93,13 @@ The target audience for True Essence is:
 
 User goals are:
 
-- To have a place where naturlaly made products can be purchased, knowing that they are 100% natural.
+- To have a place where naturally made products can be purchased, knowing that they are 100% natural.
 - To be able to find the latest tips in essential gardening and natural recipes easily.
 - To be able to contact the company should you have feedback or a concern.
 - To be able to shop online safely
-- To be able to have itms delivered at a nominal fee or free dependant on the sum spent.
+- To be able to have items delivered at a nominal fee or free dependant on the sum spent.
 - To have a place where a blog can be found filled with information.
-- To cbe able to add comments
+- To be able to add comments
 
 Some extra goals users might have:
 
@@ -111,16 +111,16 @@ Some extra goals users might have:
 True Essence meets these user needs in that:
 
 - The recipes here and all of our products are 100 % naturally made.
-- Our new blog is filled with tips and help and recipies on all things "Essential".
+- Our new blog is filled with tips and help and recipes on all things "Essential".
 - This is wonderful in that there are always new and improved ideas to try and recipes to inspire all.
-- Our online store is safe and uses a progrm that protects your data, so you can shop with confidence.
+- Our online store is safe and uses a program that protects your data, so you can shop with confidence.
 - With every new order the delivery amount is adjusted depending on the sale amount. Meaning delivery could be free.
 - We now have a weekly blog that is filled with information on gardening, medical and recipes.
 - The user can add comments to the blogs, this helps us to know what the user wants in the next blog. 
 
 ### Business Goals
 
-- To give the user the ease and convinience of shopping in our online store.
+- To give the user the ease and convenience of shopping in our online store.
 - To give the user the option to increase their shopping to obtain "Free Delivery".
 - To give the user the peace of mind that their payment details are safe.
 - To give the user a place to learn/read about new ideas on essential gardening.
@@ -129,7 +129,7 @@ True Essence meets these user needs in that:
 Business Owner goals are:
 - To give be able to grow our(the company) brand and customer base
 - To grow the business in areas such as getting customers to come and see the farm
-- To grow the business so that we are able to offer lessons and classes in all things "Essential".
+- To grow the business so that we can offer lessons and classes in all things "Essential".
 
 True Essence meets these user needs in that:
 
@@ -137,14 +137,14 @@ True Essence meets these user needs in that:
 - If the user has logged in, they have access to see their previous purchases under "My Profile page"
 - When the user is purchasing items from the online store, they can see what their total spent is and how much they need to spend to get "Free Delivery".
 - If the user has the correct validated login they can add products to the store.
-- The Add-Product page clearly structured and laid out in an easy to understand way.The user has the option to Add their Product, if they are satisfied they can then save their product or delete it.
-- The user interface for the input of products has been controlled to validate input. For example the correct url format is required for the image input.
-- Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
+- The Add-Product page is clearly structured and laid out in an easy to understand way. The user has the option to Add their Product, if they are satisfied they can then save their product or delete it.
+- The user interface for the input of products has been controlled to validate input. For example, the correct URL format is required for the image input.
+- Setting input field types to `min length, `max length,` number`, `URL etc makes sure the user is prompted when the data they have added is incorrect.
 - To make navigation easy for the user, buttons have been provided on the pages to help direct should they get stuck. For example, cancel, edit, add-recipe etc.
 
 ### True Essence Goals
 
-- To provide an easy to navigate site, where people can purchase their favorite oils and keep track of what they have ordered previously in the profile section.
+- To provide an easy to navigate site, where people can purchase their favourite oils and keep track of what they have ordered previously in the profile section.
 - To provide a site that is knowledgable in the growing and nurturing of essential oil plants.
 - To provide a site that is knowledgable in the making of scented soaps and candles.
 - To grow the brand of True Essence by way of the online shop.
@@ -155,7 +155,7 @@ True Essence meets these user needs in that:
 ### Visitor Stories
 
 As a visitor to True Essence I would expect/want/need:
-1. To easily find what I am looking for, I want the site layout to make sense, as varying ages have varying understanding so I dont want to be confused or put off using it. 
+1. To easily find what I am looking for, I want the site layout to make sense, as varying ages have varying understanding so I don't want to be confused or put off using it. 
 
 2. The information to be laid out in a way that is easy for me to navigate and understand, so I may find what I need quickly and efficiently.
 
@@ -163,9 +163,9 @@ As a visitor to True Essence I would expect/want/need:
 
 4. The ability to search through the blog posts to find what I need. Then to be able to click and get more detailed information.
 
-5. To be able to filter the products and blog posts by name, description or category and find the item that are best suited for my needs.
+5. To be able to filter the products and blog posts by name, description or category and find the item that is best suited for my needs.
 
-6. As a someone keen on learning new things, I want to be able to find a recipe that is easy and quick and fun to make.
+6. As someone keen on learning new things, I want to be able to find a recipe that is easy and quick and fun to make.
 
 7. As a user I want my details to be safely kept and not reused or sold.
 
@@ -189,15 +189,15 @@ The following design choices were made with this in mind:
 - The navbar background is kept white all the way through, with a soft lavender as the page overlay for all other pages
 - The product cards have clear white background with black writing on them which show up nicely on the lavender overlay.
 - The blog posts are on a white card with an image of the category.
-- The post links are done in blue so they show up nicely and can be seen straight away in the blog snippit.
-- In the footer two colors were used. A soft pink and a darker purple. This makes the footer stand out more and adds contrast to the page.
+- The post links are done in blue so they show up nicely and can be seen straight away in the blog snippet.
+- In the footer, two colours were used. A soft pink and a darker purple. This makes the footer stand out more and adds contrast to the page.
 
 ### Styling
-- All **buttons** on the site fit the bootstrap button styling in size and shape, I kept the colors of blue and red for the edit and delete buttons and black for the rest of the buttons. 
+- All **buttons** on the site fit the bootstrap button styling in size and shape, I kept the colours of blue and red for the edit and delete buttons and black for the rest of the buttons. 
 - Bootstrap **cards** were utilized on the products page to display the product selection.
 - Bootstrap **cards** were utilized on the blog page to display the category selection, with a link to each category selection page on it. 
 - hover effects
-    - Some subtle **shadows** have been added to the nav bar dropdown menu's. Links have been underlined. All this gives a positive user experience.
+    - Some subtle **shadows** have been added to the navbar dropdown menus. Links have been underlined. All this gives a positive user experience.
 
 ## Wireframes
 - [Home Page](https://share.balsamiq.com/c/xiVDhooqR3LYUWTqw3Dzm2.png)
@@ -214,8 +214,8 @@ The following design choices were made with this in mind:
 # Features
  
 ## Custom JavaScript
-- In the blog section the main imagry was not the same height. By customising the js of the page, it made things look nicer. 
-- By defining js on the blog.html page using the class selector for those images, it improves the user experience.
+- In the blog section the main imagery was not the same height. By customising the js of the page, it made things look nicer. 
+- By defining js on the blog.html page using the class selector for those images, improves the user experience.
 
 ## Existing Features
 
@@ -225,15 +225,15 @@ The following design choices were made with this in mind:
 
 - For visitors to the site who are not logged in, list items links are available for them to use.
     1. Home (The logo itself)
-    2. Products (drop down menu of products)
-    3. Blog Posts(Read Only)
+    2. Products (drop-down menu of products)
+    3. Blog Posts(Read-Only)
     4. Log In
     5. Register 
     6. Shopping Bag
 
 - For users who are logged in, the list items are as follows: 
     1. Home (The logo itself)
-    2. Products (drop down menu of products)
+    2. Products (drop-down menu of products)
     3. Blog Posts
     4. Add New Blog
     5. Shopping Bag
@@ -257,8 +257,8 @@ The following design choices were made with this in mind:
 <br>
 
 **Hero Image**
-- True Essence home page features a cheerful and colorful hero image that has bright colors. Bright yellow lemons and green leaves surround a essential oils bottle.
-- This image is coded as a background-image in css and set to `background-size: cover;` so that it is responsive and doesnt distort or stretch. 
+- True Essence home page features a cheerful and colourful hero image that has bright colours. Bright yellow lemons and green leaves surround an essential oils bottle.
+- This image is coded as a background-image in CSS and set to `background-size: cover;` so that it is responsive and doesn't distort or stretch. 
 
 **Search Bar**
 - On the top of each page is a Search Bar that was coded in using `Text Index Searching`. The search bar has a search button on the left side of the search bar.
@@ -271,7 +271,7 @@ The following design choices were made with this in mind:
 <br>
 
 **Dropdown Product List**
-- This dropdown list is found in the navbar. It is a dropdown list of all products under the online shop nav.At the top is `Candles`, then `Soaps`, `Diffusers`, `Oils`, `New Arrivals` and then `Special Occassions'. 
+- This dropdown list is found in the navbar. It is a dropdown list of all products under the online shop nav. At the top is `Candles`, then `Soaps`, `Diffusers`, `Oils`, `New Arrivals` and then `Special Occasions. 
 - Each selection takes you to the product page of all products added in that category.
 
 ### Blog Post Page
@@ -281,7 +281,7 @@ The following design choices were made with this in mind:
 <br>
 
 **Dropdown Blog List**
-- This dropdown list is found in the navbar. It is a dropdown list of all Blog Posts under the Our Blog nav.At the top is `All`, then `Gardening`, `Medical`, `Recipes`, and `Add Post`. 
+- This dropdown list is found in the navbar. It is a dropdown list of all Blog Posts under the Our Blog nav. At the top is `All`, then `Gardening`, `Medical`, `Recipes`, and `Add Post`. 
 - Each selection takes you to the blog post page of all posts added in that category.
 
 ### Log In Page
@@ -290,32 +290,32 @@ The following design choices were made with this in mind:
 </div>
 <br>
 
-- The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
+- The login page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
   The user once logged in will receive a welcome message and be directed to their profile page. 
 - The profile page a page for that specific user. All the previous purchases that this user has ever purchased will be on this page. This page is unique to the user.
-- The user then has the option to add, edit or delete blog posts. These buttons will appear only on the session users profile page on the blog post. The user will not be able to edit or delete blog posts that were not added by the user themselves.
-- If the user does not have a username or password the user is directed to the register page.
+- The user then has the option to add, edit or delete blog posts. These buttons will appear only on the session users profile page on the blog post. The user will not be able to edit or delete blog posts that were not added by the user.
+- If the user does not have a username or password the user is directed to the registration page.
 
 ### Register Page
-- The Register page is also a simple **form** where by the user has to choose a username and password.
+- The Register page is also a simple **form** whereby the user has to choose a username and password.
  - Once the user name and password have been entered and are not duplicates of what is already there, the site will direct you to your blank profile page. Now you are ready to start adding blogs and purchasing products.
 
  ### Add Post Page
 - This can only be accessed if you are logged in as a user.
 - The Add Post page is a **form** that gives the user the selection of which category they want the post to show in. 
 - The user then can select an image and add it to the body box where the post will appear. The Post can be edited and made to appear as any normal post.
-- Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
+- Validation of the `<input>` fields is handled in different ways. The input `type` attributes are set to `text`, and `url`.
 - Limits are placed on both min and max lengths of input accepted.
 
 ### Editing Post Page
 - Once a new post has been added and the user wants to edit his /her post, they can log in to their profile page and on their post will be 2 buttons.  One for `Edit` and the other for `Delete`. 
 - The edit button allows the user to edit the post and then at the bottom of the post will be an update button. The user can then update once the editing is complete.
-- Upon successful completion a message will state that the post has been successfully updated. 
+- Upon successful completion, a message will state that the post has been successfully updated. 
 
 ### Delete Post
 - Should the user decide that they want to **DELETE** the post and they click on delete button, a page will appear with a message asking if the user is sure that want to delete this? if the user clicks on the "Delete" button below the post will be deleted. 
 - This page is a safety net to ensure the user doesn't remove all the information they entered.
-- Users have to be logged in to be able to a delete posts.
+- Users have to be logged in to be able to delete posts.
 
 ### Log Out Page
 - The logout page allows users to end their session.
@@ -336,22 +336,22 @@ The following design choices were made with this in mind:
  - The Features Left To Implement is a section that will grow in time as the site itself grows.
 
 - Workflow for comments so admin can approve and edit them before they are public
-- restrict ability to edit/delete posts to users that created them
+- restrict the ability to edit/delete posts to users that created them
 - update logged in user ability to manage own posts and own comments
 - update admin user ability to manage all posts and comments
-- update search on blog page for keywords in blogs not products
+- update search on the blog page for keywords in blogs, not products
 - allow users to like or unlike blog posts
  
  # Information Architecture
  - The blog model, the comments model and the contact model were created to add to the basic structure of the project.
  - The blog model allows the user to use the full CRUD operations. Once logged in they can create their own blog, edit and delete the blog and read their own and other blogs as well.
- - Having a blog section then needs to have a comments section as well. Poeple like to let you know what they are thinking.
+ - Having a blog section then needs to have a comments section as well. People like to let you know what they are thinking.
  - The comments section appears under each blog and the user can then leave a comment on the blog they have read.
- - The contact model is a smaller model that allows the user to get in contact with True Essence via email and recieve a responce in turn.
+ - The contact model is a smaller model that allows the user to get in contact with True Essence via email and receive a response in turn.
 
 ### Database Choice
 
-As this website is a student project and where I am in the course i had the opportunity to use db.sqlite3 in conjunction with gitpod.
+As this website is a student project and where I am in the course I had the opportunity to use db.sqlite3 in conjunction with gitpod.
 Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
 
 ### Data Storage Types
@@ -367,11 +367,11 @@ The types of data stored for my project are:
 - CRUD was used in the development of this site. Create, Read, Update and Delete. The following sections used CRUD.
 
 ## Blog  Categories
-- The  categories are used to organize blogs by common types. They are hard wired to be Medical, Gardening and Recipes.
+- The categories are used to organize blogs by common types. They are hard-wired to be Medical, Gardening and Recipes.
     - **Create** Blog Posts are added when accessing the /Add-Post only if the user is logged in.
-    - **Read** The Blog Post categories are shown as a drop down when adding a blog.
-    - **Update**  Categories cannot be updated at this point in time
-    - **Delete** Categories cannot be deleted at this point in time
+    - **Read** The Blog Post categories are shown as a drop-down when adding a blog.
+    - **Update**  Categories cannot be updated at this point
+    - **Delete** Categories cannot be deleted at this point
 
 ### Users
 - The USERS collection helps tie blogs to users of the website and to manage access to certain functionalities on the site.
@@ -384,11 +384,11 @@ The types of data stored for my project are:
 - The Blog Post collection stores data on all Blogs entered.
     - **Create** New Blogs can be added by many new users that are logged in, to the Blog list.
     - **Read**  The Blogs can be read by many users but not changed in any way unless the user is the session user.
-    - **Update**  Blog Posts can only be updated if the user is the session user and has added that perticular blog.
-    - **Delete**  Blog Posts can only be deleted if the user is the session user and has added that perticular blog themselves.
+    - **Update**  Blog Posts can only be updated if the user is the session user and has added that particular blog.
+    - **Delete**  Blog Posts can only be deleted if the user is the session user and has added that particular blog themselves.
 
 ## ERD 
-- This is a Entity Relationship Diagram of how the database collections interact.
+- This is an Entity Relationship Diagram of how the database collections interact.
 [ERD](https://i.ibb.co/4pL5CY4/ERD.png)
 <br>
 
@@ -405,17 +405,17 @@ The types of data stored for my project are:
 ### Libraries
 - [CSS3](https://www.w3schools.com/w3css/default.asp) - used to style DOM appearance. 
 - [HTML5](https://www.w3schools.com/html/default.asp) -  used to define DOM elements. 
-- [JQuery](https://jquery.com) - used to initialize handlers for user interactive elements such as Bootstrap framework pieces like: check boxes, date pickers, menu toggles.
+- [JQuery](https://jquery.com) - used to initialize handlers for user-interactive elements such as Bootstrap framework pieces like checkboxes, date pickers, menu toggles.
 - [JavaScript](https://www.javascript.com/)  -  used to help handle challenge member entry.
-- [Python](https://www.python.org/) the project back-end functions are written using Python. Django and Python is used to build route functions.
+- [Python](https://www.python.org/) the project back-end functions are written using Python. Django and Python are used to build route functions.
 - [Django](https://docs.djangoproject.com/en/3.0/) Object Relational Mapper, HTML templating, URL routing, Form validation, Authentication, Admin and Security, does a lot of the heavy lifting for a website without much developer input 
 - [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown
 [Back To Table of Contents](#table-of-contents)
 
 # Defensive Programming
-- To prevent everyone from adding posts and being able to delet at will this code was added.
+- To prevent everyone from adding posts and being able to delete them at will this code was added.
   @method_decorator(login_required, name='dispatch')
-- By using this it means that the user has to be logged in to be able to post or edit or delete a post that they have created.
+- By using this means that the user has to be logged in to be able to post or edit or delete a post that they have created.
 
 ## Testing
 
@@ -443,28 +443,123 @@ The types of data stored for my project are:
     - [Galexy Tablet](https://i.ibb.co/2KQQ918/galaxy-tablet.png) 
     - [Xiaomie](https://i.ibb.co/K6hNhhS/xiaomi.png)
 
-- Landed on the home page, clicked the Nav bar buttons to see that they all worked.
-- Registered and logged in. Recieved notification that an email was to be sent. Email recieved and returned validated.
-- Clicked on the products page to view the different products. Each product having its own seperate description, price and size where applicable. 
-- When clicking on a product and adding it to the bag, the user can continue shopping or checkout securely.
-- When checking out there is a summary as to what is in my bag. then if i want to pay click secure check out. complete the personal detail form and fill in the card details. The payment goes through.
-- Upon Checkout the user is requested to complete a user information form. on payment the user recieves an email with a detailed description on the transaction.
-- Clicked on the blog page and navigated around it, clicked on the posts and the comment section.If i am logged in i can post or edit my post or delete it. if im not logged in the buttons to 
-    edit and delete are not visible to me.
+| Feature Tested                        | Steps Taken 
+
+| Navigation                            | Landed on the home page, clicked the Navbar buttons to see that they all worked.
+
+| User Registration                     | 1. Fill out registration form.
+                                        | 2. See notification about user is registered and validation email sent
+                                        | 3. Click validation link
+                                        | 4. Login
+                                        | 5. Verify navigation menus changed 
+
+| Products                              | Verify each products has
+                                        | 1. Image, name, price, category, rating
+                                        | 2. product cards in same row are same size
+
+| Product Detail & Add to Bag           | 1. Click each product's image from Products page to get to detail page 
+                                        | 2. Verify click the product image and view detail page to verify
+                                        |     a. image, name, price, category, rating, description
+                                        |     b. see quantity box that works
+                                        |     c. add 1 or 2 to bag then click keep shopping
+                                        | 3. Verify item is in bag layer with correct quanity.
+                                        | 4.  Click Keep Shopping Button.
+
+| Bag Functionality                     | Once products is in bag, verify info is correct:
+                                        | 1. Image
+                                        | 2. Name  
+                                        | 3. Quantity
+                                        | 4. Totals are good
+
+| Checkout - not logged in              | 1. add 2 usb diffusors to cart
+                                        | 2. verify bag info math is good
+                                        | 3. click secure checkout from bag layer 
+                                        | 4 verify math is good on bag page, no delivery charge
+                                        | 5. update quantity to 1, verify delivery charge is there in bag and page
+                                        | 6. close bag layer.
+                                        | 7. update to 2. Verify changes, close layer.
+                                        | 8. click secure checkout button
+                                        | 9. verify form is not filled out.
+                                        | 10. Click complete order without filling in data.
+                                        | 11. fill in name, click submit and repeat process so you check validation, on each required field.                                                  
+                                        | 12. submit order.
+                                        | 13. verify notifcation confirmation email matches what you entered.
+                                        | 14. verify confirmation # matches page, layer and email
+                                        | 15. verify math in email.
+        
+| Checkout - logged in,no past orders   | 1. add 1 lavendar candles to cart
+                                        | 2. verify bag info math is good
+                                        | 3. click secure checkout from bag layer
+                                        | 4. verify delivery charge 
+                                        | 5. verify form is not filled out.
+                                        | 6. Click login button & login
+                                        | 7. click bag and get back to checkout form page
+                                        | 8. verify email is filled out but no other info
+                                        | 9. fill out the form, make secure save button is checked, and click complete.
+                                        | 10. verify email, page and notification layer match 
+
+| Checkout Process, Logged In with Saved Info     
+                                        | 1. add 2 lavendar candles to cart
+                                        | 2. verify bag info math is good
+                                        | 3. click secure checkout from bag layer
+                                        | 4. verify no delivery charge
+                                        | 5. verify form is filled out except for full name and creditcard 
+                                        | 6. Click login button & login
+                                        | 7. click bag and get back to checkout form page.
+                                        | 8. verify email is filled out but no other info.
+                                        | 9. fill out the form, make secure save button is checked, and click complete
+                                        | 10.  verify email, page and notification layer match  
+
+| Blog Post Page                        | 1. Log out, click blogs all navigation
+                                        | 2. Verify imagery and posts are nice and you see 3 categories of posts ordered by oldest to newest.
+                                        | 3. click blogs gardening. Verify only gardening posts.
+                                        | 4. Click blogs medical, verify only medical posts
+                                        | 5. Click Blogs Recipes, verify only recipe blogs.
+                                        | 6. Click add Post, verify you are taken to login page.
+                                        | 7. Login, verify you are at an Add post form
+                    
+| Add Blog Post                         | 1. log in
+                                        | 2. Click "add a Post" from Our Blog in navigation 
+                                        | 3. Click POST Button
+                                        | 4. If validation error is hit, fill in that form element and then Click POST until form submits.
+                    
+| Edit Blog Post                        | 1. find the post you just created.
+                                        | 2. Edit it.
+                                        | 3. See that required fields are auto populated
+                                        | 4. Add a header image
+                                        | 5. See that the image is on the detail page now
+                                        | 6. Edit it again. 
+                                        | 7. Add in some fancy body stuff.
+                                        | 8. See how cool the editor is
+                                        | 9. Click the post button.
+                                        | 10.Validate the updates you made to the body carried over
+                            
+| Delete Blog Post                      | 1. Find the post you just updated.
+                                        | 2. Delete it
+                                        | 3. Verify it is truly not on the Our Blog All page.
+
+| Add A Comment to a Blog               | 1. Make sure you are logged out
+                                        | 2. Click on Growing Lavender Blog.
+                                        | 3. Click on an Add Comment Link.
+                                        | 4. Type in your comment
+                                        | 5. Click on the Growing Lavender Blog again.
+                                        | 6. See the latest comment!  
+
 
 ### Defect Tracking
-    1. When moving images from gitpod to Heroku there were a few that just didnt want to show. Had to physically load them seperatly. there was still one that just refused, so it was deleted, then the problem was solved.
-    2. There was a massive spacing above all the headings on all the pages, I have to adjust the media query 768px and remove the contact form in the css.
-    3. There was an issue with the blog pages and their height and the images not showing on heroku. Had to disable colstatic-1 and tried again.The had to change the /media/ to {{MEDIA_URL}} to get the images to show. Managed to get all 3 images showing finally.
-    4. Then trying to link the blogs to the blog category page. Took out spacings in names_names and then things started wotking better.
-    5. Added Custom Js to sort out the height issue with the blogs, they all appear correct now.
-    6. Struggled with the contact us image. The image i had chosen was a low quality so when amplified looked terrible. Had to ditch the image and search for a better quality, ended up using the image for the other pages.
-    7. Battled getting the 404 and 500 pages to show. Changed the handler and moved the urls to the main project url. then got it working.
+> 1. When moving images from gitpod to Heroku there were a few that just didn't want to show. Had to physically load them separately. there was still one that just refused, so it was deleted,
+then the problem was solved.
+> 2. There was a massive spacing above all the headings on all the pages, I have to adjust the media query 768px and remove the contact form in the css.
+> 3. There was an issue with the blog pages and their height and the images not showing on heroku. Had to add a config var DISABLE_COLLECTSTATIC and set it to 1 and tried again. The had to change the /media/ to {{MEDIA_URL}} to get the images to show. Managed to get all 3 images showing finally.
+> 4. Then trying to link the blogs to the blog category page. Took out spacings in names_names and then things started working better.
+> 5. Added Custom Js to sort out the height issue with the blogs, they all appear correct now.
+> 6. Struggled with the contact us image. The image i had chosen was a low quality so when amplified looked terrible. Had to ditch the image and search for a better quality, ended up using the image for the other pages.
+> 7. Battled getting the 404 and 500 pages to show. Changed the handler and moved the urls to the main project url. then got it working.
 
 ### Outstanding Defects
-    1. On small devices STRIPE CC number overruns into the  date/month field. This field is made by stripe and is very tricky to adjust. The tutors also could not fix it.
+> 1. On small devices STRIPE CC number overruns into the  date/month field. This field is made by stripe and is very tricky to adjust. The tutors also could not fix it.
     [Number Overflow](https://i.ibb.co/jysvJ9D/number-overflow.png)
-    2.
+> 2. If a user uploads an image with a space in it, Heroku injects an underscore and then the image is not found and writes a 404 console error. I should update the image loading validation to remove spaces for add blog, edit blog, add product, edit product pages/views.
 
 # Deployment
 
@@ -484,14 +579,14 @@ The following **must be installed** on your machine:
 - An account with [AWS](https://aws.amazon.com/) are needed to complete this project
 
 ### Instructions
-1. Save a copy of the github repository located at https://github.com/Lee-AnnC/True_Essence by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder.
+1. Save a copy of the GitHub repository located at https://github.com/Lee-AnnC/True_Essence by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder.
    If you have Git installed on your system, you can clone the repository with the following command.
 ```
 git clone https://github.com/Lee-AnnC/True_Essence
 ```
 2. If possible open a terminal session in the unzip folder or cd to the correct location.
 
-3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment.
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built-in virtual environment.
 
 Enter the command:
 ```
@@ -505,29 +600,29 @@ _NOTE: Your Python command may differ, such as python3 or py_
 ```
 _Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
 
-4. If needed, Upgrade pip locally with
+5. If needed, Upgrade pip locally with
 ```
 pip install --upgrade pip.
 ```
-5. Install all required modules with the command 
+6. Install all required modules with the command 
 ```
 pip -r requirements.txt.
 ```
-6. In your local IDE create a file called `.flaskenv`.
+7. In your local IDE create a file called settings.py.
 
-7. Inside the .flaskenv file, create a SECRET_KEY variable.
+8. Inside the settings.py file, create a SECRET_KEY variable.
 
-8. You can now run the application with the command
+9. You can now run the application with the command
 ```
 python3 app.py
 ```
-9. Remember to make migrations once and everytime changes are made to the main model.
+10. Remember to make migrations, every time changes are made to the main model.
 
- 10. Remember to /loaddata categories first then loaddata products to be able to see the product categories
+ 11. Remember to /loaddata categories first then loaddata products to be able to see the product categories
 
 ## Heroku Deployment
 
-To deploy True_Essence to heroku, take the following steps:
+To deploy True_Essence to Heroku, take the following steps:
 
 1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
@@ -537,42 +632,44 @@ To deploy True_Essence to heroku, take the following steps:
 
 3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set your region to Europe.
 
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+4. From the Heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
-5. Confirm the linking of the heroku app to the correct GitHub repository.Make sure this is your Repository name.
+5. Confirm the linking of the Heroku app to the correct GitHub repository. Make sure this is your Repository name.
 
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+6. In the Heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 
 7. Set the following config vars:
 
 | Key | Value |
  --- | ---
 SECRET_KEY | `<your_secret_key>`
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-DATABASE_URL
-EMAIL_HOST_PASS
-EMAIL_HOST_USER
-STRIPE_PUBLIC_KEY
-STRIPE_SECRET_KEY
-STRIPE_WH_SECRET
-USE_AWS
-DISABLE_COLLECTSTATIC 1
+AWS_ACCESS_KEY_ID | `<your_secret_key>`
+AWS_SECRET_ACCESS_KEY | `<your_secret_key>`
+ALLOWED_HOSTS| `<auto populated by heroku>`
+DATABASE_URL | `<auto populated by heroku>`
+EMAIL_HOST_PASS | `<your_secret_key>`
+EMAIL_HOST_USER | `<your_secret_key>`
+STRIPE_PUBLIC_KEY | `<your_secret_key>`
+STRIPE_SECRET_KEY | `<your_secret_key>`
+STRIPE_WH_SECRET | `<your_secret_key>`
+USE_AWS | True
+DISABLE_COLLECTSTATIC | 1
 
-8. In the heroku dashboard, click "Deploy".
+8. In the Heroku dashboard, click "Deploy".
 
-9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+9. In the "Manual Deployment" section of this page, make sure the master branch is selected and then click "Deploy Branch".
 
 10. The site is now successfully deployed.
 
 # Credits
 
 ## Content
-
 - The text, images, links and other data in the database was sourced from various websites including but not limited to
 
 - About_Us image[About](https://www.timeout.com/london/things-to-do/lavender-fields-in-and-around-london)
 - Steam Distillling[Distilling Video](https://www.youtube.com/watch?v=fBtuUUTbTyw)
+- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heavily modified to suit the site needs. There were 3 additional models added.
+- Code to help build a blog and its attachments, add, edit, delete and comments were taken from [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 
 ## Media
 
@@ -580,7 +677,7 @@ DISABLE_COLLECTSTATIC 1
 
 - The photograph for the hero image was sourced from [womansworld](https://www.womansworld.com/posts/mental-health/essential-oils-for-anxiety)
 
-- Where possible the links to the images for the products and blogs were taken directly from the source image url. 
+- Where possible the links to the images for the products and blogs were taken directly from the source image URL. 
 
 - On occasion when this did not work the image was copied to my local machine and then uploaded to my [imgBB](https://leec.imgbb.com/) account, where I took the link from instead.
 
@@ -618,7 +715,7 @@ DISABLE_COLLECTSTATIC 1
     [Scented Candles](https://ar.pinterest.com/pin/317503842453953377/)
     [Aromatherapy Gift Basket](https://www.pinkeepromise.com/Essential-Oil-Gift-Basket-Young-Living)
     
-- Special Occassions
+- Special Occasions
     [Lavender gift basket](https://www.leisureopportunities.co.uk/news/Body-Bliss-launches-new-aromatherapy-app-for-customisable-spa-treatments/308027
     [Candle Gift Basket](https://kelownacandlefactory.com/product/medium-gift-basket/)
     
@@ -639,9 +736,9 @@ DISABLE_COLLECTSTATIC 1
 
 ## Code
 
-- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heaverly modified to suit the site needs.There were 3 additional models added.
+- Template code for this site was taken from our Ecommerce Boutique Ado Mini Project Lessons and heavily modified to suit the site needs. There were 3 additional models added.
 
-- Template code for cards in the blogs and products were taken from [Bootstrap](https://getbootstrap.com/) and modified to suit the sites needs.
+- Template code for cards in the blogs and products were taken from [Bootstrap](https://getbootstrap.com/) and modified to suit the site's needs.
 
 - Code to help build a blog and its attachments, add, edit, delete and comments were taken from [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 
@@ -649,11 +746,11 @@ DISABLE_COLLECTSTATIC 1
 
 - Code for the grid was taken from [Bootstrap](https://getbootstrap.com/)
 
-- Code for adding the correct prefixes to css was created using [AutoPrefixer](https://autoprefixer.github.io/).
+- Code for adding the correct prefixes to CSS was created using [AutoPrefixer](https://autoprefixer.github.io/).
 
 - To dump and load data help was taken from [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata)
 
-- To sort out the blog imagry and heights advice was taken from [CSS-tricks](https://css-tricks.com/snippets/jquery/equalize-heights-of-divs/)
+- To sort out the blog imagery and heights advice was taken from [CSS-tricks](https://css-tricks.com/snippets/jquery/equalize-heights-of-divs/)
 
 - To make my add post more responsive help was taken from [Nolanbraman](https://www.nolanbraman.com/Resizing%20the%20Django-ckeditor%20To%20Make%20It%20Responsive/)
 
@@ -661,8 +758,8 @@ DISABLE_COLLECTSTATIC 1
 
 Special thanks to my mentor **Aaron Sinnot** for his patience and help.
 
-Special thanks to **Malia Havlicek** who's patience and understanding has helped in many a dark day when things haven't gone to plan.
-For being my sounding board and an extra pair of eyes when i was just not seeing things.
+Special thanks to **Malia Havlicek** who's patience and understanding has helped on many a dark day when things haven't gone to plan.
+For being my sounding board and an extra pair of eyes when I was just not seeing things.
 
 ## Disclaimer
-This is a student project and hence the content of this website is educational purposes only.
+This is a student project and hence the content of this website is for educational purposes only.

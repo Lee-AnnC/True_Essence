@@ -12,12 +12,12 @@
 
     <h1>Update Post</h1>
     <br/><br/>
-    <div class="form-group">
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.media }}
-            {{ form.as_p }}
-            <button><a href="{% url 'BlogView' %}">Update</a></button>
+    <div class="form-group" >
+    <form method="POST" enctype="multipart/form-data" action="{% url 'update_post' post.id %}">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p }}
+            <button><a href="{% url 'BlogView' %}">Update Post</a></button>
         </form>
     </div>
 
